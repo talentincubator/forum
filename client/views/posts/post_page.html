@@ -1,0 +1,37 @@
+<template name="postPage">
+  {{> ViewPost}}
+  
+  <ul class="comments">
+    {{#each comments}}
+      {{> commentItem}}
+    {{/each}}
+  </ul>
+  
+  {{#if currentUser}}
+    {{> commentSubmit}}
+  {{else}}
+    <p>Please log in to leave a comment.</p>
+  {{/if}}
+</template>
+
+
+<template name="ViewPost">
+  <div class="post" {{attributes}}>
+    <a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆</a>
+    <div class="post-content">
+      <h3><a href="{{pathFor 'postPage'}}">{{title}}</a><span>{{domain}}</span></h3>
+    <div class="description"> 
+        {{description}}  
+    </div>
+      <p>
+        {{pluralize votes "Vote"}},
+        submitted by {{author}},
+        <a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "comment"}}</a>
+        {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
+      </p>
+    </div>
+    {{# if this.url}}
+    <a href="{{url}}" class="discuss btn btn-default">View code</a>
+    {{/ if}}
+  </div>
+</template>
