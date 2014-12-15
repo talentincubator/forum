@@ -59,7 +59,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{pathFor 'home'}}">{{ siteTitle }}</a>
+        <a class="navbar-brand" href="{{pathFor 'home'}}">
+<span><img src="/images/logo.png" style="height:20px" alt=""/></span>
+        <span>Classroom</span></a>
       </div>
 
       <div class="collapse navbar-collapse" id="main-nav">
@@ -85,7 +87,7 @@
         </li>
         {{#if currentUser}}
         <li class="{{activeRouteClass 'postSubmit'}}">
-          <a href="{{pathFor 'postSubmit'}}">Submit Post</a>
+          <a href="{{pathFor 'postSubmit'}}">Submit Question</a>
         </li>
         <li class="dropdown">
           {{> notifications}}
@@ -105,10 +107,10 @@
             </li>
           </ul>
         {{else}}
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="{{ pathFor 'entrySignIn' }}" class="btn btn-default navbar-btn">Sign in</a></li>
-            <li><a href="{{ pathFor 'entrySignUp' }}" class="btn btn-primary navbar-btn">Register</a></li>
-          </ul>
+         <div class="navbar-right">
+            <a href="{{ pathFor 'entrySignIn' }}" class="btn btn-default navbar-btn">Sign in</a>
+            <a href="{{ pathFor 'entrySignUp' }}" class="btn btn-primary navbar-btn">Register</a>
+         </div>
         {{/if}}
 
   <!--         <li class="{{ activeRouteClass 'dashboard' }}"><a href="{{ pathFor 'dashboard' }}"><i class="fa fa-gear"></i> Dashboard</a></li>

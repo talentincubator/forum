@@ -4,8 +4,9 @@ Meteor.startup(function() {
   });
 
   AccountsEntry.config({
+    logo: '',   
     homeRoute: '/',
-    dashboardRoute: '/dashboard',
+    dashboardRoute: '/',
     profileRoute: '/profile',
     language: 'en',
     showSignupCode: false,

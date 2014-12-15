@@ -1,20 +1,20 @@
 Meteor.startup(function() {
 
   Meteor.Mailgun.config({
-    username: 'postmaster@domain.com',
-    password: 'password-goes-here'
+    username: 'postmaster@talentincubator.eu',
+    password: '2e4d1d37aea5a244fa088e7f61e51573'
   });
 
   Meteor.methods({
-    'sendContactEmail': function(name, email, message) {
+    'sendContactEmail': function(receiverEmail, name ,senderEmail, subject, message) {
       this.unblock();
 
       Meteor.Mailgun.send({
-        to: 'recipient@example.com',
-        from: name + ' <' + email + '>',
+        to: receiverEmail,
+        from: name + ' <' + senderEmail + '>',
         subject: 'New Contact Form Message',
         text: message,
-        html: Handlebars.templates['contactEmail']({siteURL: Meteor.absoluteUrl(), fromName: name, fromEmail: email, message: message})
+        html: Handlebars.templates['contactEmail']({siteURL: Meteor.absoluteUrl(), fromName: name, fromEmail: senderEmail, message: message})
       });
     }
   });

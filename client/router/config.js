@@ -16,4 +16,4 @@
 //   }
 // });
 
-// Router.onBeforeAction('loading');
+Router.onBeforeAction('loading');
