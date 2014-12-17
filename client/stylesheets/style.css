@@ -189,6 +189,7 @@ body {
     border-radius: 0px !important;
     color: white;
     font-weight: 100;
+    margin-bottom: -20px;
 }
 
 .well:hover {
@@ -201,6 +202,7 @@ body {
     padding: 15px;
     border-radius: 0px !important;
     border-bottom : 2px solid rgba(97, 203, 255, 0.65);
+    margin-bottom: -20px;
 }
 
 

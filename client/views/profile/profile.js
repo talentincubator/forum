@@ -3,11 +3,12 @@ Template.profile.helpers({
     return [
       { name: "firstName", required: true },
       { name: "lastName", required: true },
-      { name: "organization", required: false },
+      { name: "name", required: true },
+      { name: "organizationWorking", required: false },
+      { name: "position", required: false },
       { name: "location", required: false },
-      { name: "bio", required: false, type: 'text_area' },
-      { name: "url", required: false },
-      { name: "googlePlusUrl", required: false },
+      { name: "professionalSkills", required: false, type: 'text_area' },
+      { name: "linkedinUrl", required: false },
       { name: "twitterHandle", required: false }
     ];
   }
@@ -17,9 +18,15 @@ Template.profile.events({
   'submit form': function(event) {
     event.preventDefault();
     var data = SimpleForm.processForm(event.target);
-    Meteor.users.update(Meteor.userId(), {$set: {profile: data}});
+     
+    var moredata = _.extend(data, {
+      name: data.name || Meteor.user().profile.name});
+    console.log(moredata);
+    Meteor.users.update(Meteor.userId(), {$set: {profile: moredata}});
   }
 });
+
+
 
 Template._profileField.helpers({
   profile: function() {

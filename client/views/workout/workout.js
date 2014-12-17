@@ -21,14 +21,17 @@ Template.workoutInsert.events({
     e.preventDefault();
     
     var workout = {
-      studying: Number($(e.target).find('[name=studying]').val()),
-      excersices: Number($(e.target).find('[name=excersices]').val()),
-      hoursstudying: Number($(e.target).find('[name=hoursstudying]').val()),
-      hoursexcersices: Number($(e.target).find('[name=hoursexcersices]').val()),      
+      studying: $(e.target).find('[name=studying]').val(),
+      excersices: $(e.target).find('[name=excersices]').val(),
+      hoursstudying: $(e.target).find('[name=hoursstudying]').val(),
+      meetingGrade: $(e.target).find('[name=meetingGrade]').val(),      
+      meetingComments: $(e.target).find('[name=meetingComments]').val(),
       // test: $(e.target).find('[name=test]').val() || 0,
       period:  Number($(e.target).find('[name=period]').val()), 
     };
     
+
+
     // var errors = validatePost(post);
     // if (errors.title || errors.url)
     //   return Session.set('postSubmitErrors', errors);
@@ -39,10 +42,10 @@ Template.workoutInsert.events({
         return throwError(error.reason);
       
       // show this result but route anyway
-      // if (result.postExists)
-      //   throwError('This has already been posted');
-      
-      Router.go('workout', {_id: result._id});  
+      if (result.postExists)
+        throwError('This has already been posted');
+      else
+        Router.go('workout', {_id: result._id});  
     });
   }
 });

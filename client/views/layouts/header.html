@@ -12,12 +12,12 @@
       </div>
       <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav" style="padding-right:15px;">
-          <li class="{{activeRouteClass 'assignments' 'workout'}}">
-            <a href="{{pathFor 'workout'}}"><b>Assignments</b></a>
+          <li class="{{activeRouteClass 'reports' 'workout'}}">
+            <a href="{{pathFor 'workout'}}"><b>reports</b></a>
           </li>
            {{#if currentUser}}
-          <li class="{{activeRouteClass 'assignments/new' 'workoutInsert'}}">
-            <a href="{{pathFor 'workoutInsert'}}">Submit Assignments</a>
+          <li class="{{activeRouteClass 'reports/new' 'workoutInsert'}}">
+            <a href="{{pathFor 'workoutInsert'}}">Submit reports</a>
           </li> 
              {{/if}}
         </ul> 
@@ -66,12 +66,12 @@
 
       <div class="collapse navbar-collapse" id="main-nav">
       <ul class="nav navbar-nav" style="">
-          <li class="{{activeRouteClass 'assignments' 'workout'}}">
-            <a href="{{pathFor 'workout'}}"><b>Assignments</b></a>
+          <li class="{{activeRouteClass 'reports' 'workout'}}">
+            <a href="{{pathFor 'workout'}}"><b>Reports</b></a>
           </li>
            {{#if currentUser}}
-          <li class="{{activeRouteClass 'assignments/new' 'workoutInsert'}}">
-            <a href="{{pathFor 'workoutInsert'}}">Submit Assignments</a>
+          <li class="{{activeRouteClass 'reports/new' 'workoutInsert'}}">
+            <a href="{{pathFor 'workoutInsert'}}">Submit report</a>
           </li> 
              {{/if}}
         </ul> 
@@ -80,10 +80,10 @@
           <a href="{{pathFor 'postsList'}}"><b>Forum</b></a>
         </li>
         <li class="{{activeRouteClass 'newPosts'}}">
-          <a href="{{pathFor 'newPosts'}}">New</a>
+          <a href="{{pathFor 'newPosts'}}">Newest</a>
         </li>
         <li class="{{activeRouteClass 'bestPosts'}}">
-          <a href="{{pathFor 'bestPosts'}}">Best</a>
+          <a href="{{pathFor 'bestPosts'}}">Voted</a>
         </li>
         {{#if currentUser}}
         <li class="{{activeRouteClass 'postSubmit'}}">

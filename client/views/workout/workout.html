@@ -14,25 +14,27 @@
     <div class="row panel">
       <div class="col-md-2 bg_blur ">
       </div>
-      <div class="col-md-10  col-xs-12">
+      <div class="col-md-8 col-xs-12">
        <div class="header">
-        <div class="row panel">
-         <h3>{{username}}
-         <span class="right">Week : {{week}} - Meeting : {{meeting}}</span> </h3> 
-       </div>
        <div class="row">
-
         <div class="col-md-12 col-xs-12" style="margin: 0px;padding: 0px;">
-          <div class="col-md-4 col-xs-4 well">Studies % completed : {{studying}}
+          <div class="col-md-4 col-xs-4 well">Reading % completed : 
+          <h1 class="h1progress">{{studying}}% </h1> 
           </div>
-          <div class="col-md-4 col-xs-4 well">Exercises % completed : {{excersices}}
+          <div class="col-md-4 col-xs-4 well">Exercises % completed : 
+            <h1 class="h1progress">{{excersices}}%</h1>
           </div>
           {{# if test}}
-          <div class="col-md-4 col-xs-4 well">Test Score : {test}}</div>
+          <div class="col-md-4 col-xs-4 ">Test Score : 
+            <h1 class="h1progress">{test}}%</h1></div>
           {{/ if}}
       </div>
        </div>
         </div>
+    </div>
+    <div class="col-md-2 col-xs-2">
+         <h3>{{username}} </h3> <p class="">Week : {{week}}</p> <p> Meeting : {{meeting}}</p> 
+
     </div>
   </div>  
 </div>
@@ -41,47 +43,59 @@
 
 
 <template name="workoutInsert">
-<h3 class="blackheadline">Please self report your assignment completion </h3>
+<h3 class="blackheadline">Please self report your assignment progress and give us your feedback </h3>
   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
    <form class="main form">
+   <div class="row">
+     
+ 
      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-
+       <h4> Homework </h4>
     <div class="form-group">
-      <label class="control-label" for="title">% of reading done</label>
+      <label class="control-label" for="title">% of reading done (public)</label>
       <div class="controls">
-        <input name="studying" id="studying" type="text" value="" placeholder="eg. 80 , 90 , 100 ?" class="form-control"/>
+        <input name="studying" id="studying" type="text" value="" placeholder="From 1 to 100" class="form-control"/>
         <span class="help-block">{{studying}}</span>
       </div>
     </div>   
        <br>
     <div class="form-group">
-      <label class="control-label" for="title">% of exersices done</label>
+      <label class="control-label" for="title">% of exersices done (public)</label>
       <div class="controls">
-        <input name="excersices" id="excersices" type="text" value="" placeholder="eg. 80 , 90 , 100 ?" class="form-control"/>
+        <input name="excersices" id="excersices" type="text" value="" placeholder="From 1 to 100" class="form-control"/>
         <span class="help-block">{{excersices}}</span>
+      </div>
+    </div>
+    <br>
+        <div class="form-group">
+      <label class="control-label" for="title">Time spent (in hours) (not public)</label>
+      <div class="controls">
+        <input name="hoursstudying" id="studying" type="text" value="" placeholder="eg. 2 , 6 , 12 ?" class="form-control"/>
+        <span class="help-block">{{hoursstudying}}</span>
       </div>
     </div>
 </div>
      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-
+ <h4> Meeting </h4>
     <div class="form-group">
-      <label class="control-label" for="title">Time spend (in hours)</label>
+      <label class="control-label" for="title">Grade the previous meeting</label>
       <div class="controls">
-        <input name="hoursstudying" id="studying" type="text" value="" placeholder="eg. 2 , 4 , 6 ?" class="form-control"/>
-        <span class="help-block">{{hoursstudying}}</span>
+        <input name="meetingGrade" id="excersices" type="text" value="" placeholder="From 1 to 10" class="form-control"/>
+        <span class="help-block">{{meetingGrade}}</span>
       </div>
     </div>
-    <br>
     <div class="form-group">
-      <label class="control-label" for="title">Time spend (in hours)</label>
+      <label class="control-label" for="title">How the previous meeting could be impoved</label>
       <div class="controls">
-        <input name="hoursexcersices" id="excersices" type="text" value="" placeholder="eg. 2 , 4 , 6 ?" class="form-control"/>
-        <span class="help-block">{{hoursexcersices}}</span>
+        <textarea name="meetingComments" rows="6" id="excersices" type="text" value="" placeholder="Share your thoughts" class="form-control"></textarea>
+        <span class="help-block">{{meetingComments}}</span>
       </div>
     </div>
 </div>
+  </div>
+  <div class="row">
 
-
+ <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <div class="form-group">
       <label class="control-label" for="url">Period</label>
       <div class="controls">
@@ -99,7 +113,10 @@
 
      </div>
    </div>
-   <input type="submit" value="Submit" class="btn btn-primary"/>
+      <input type="submit" value="Submit" class="btn btn-primary"/>
+    
+  </div>
+   </div>
  </form>
 </div>
 
