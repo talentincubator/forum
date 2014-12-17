@@ -16,7 +16,7 @@ Meteor.publishComposite("items", function() {
 
 
 
-Meteor.publish('posts', function(options) {
+Meteor.publish('forumPosts', function(options) {
   check(options, {
     sort: Object,
     limit: Number

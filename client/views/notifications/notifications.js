@@ -1,4 +1,4 @@
-Template.notifications.helpers({
+Template.HeaderNotifications.helpers({
   notifications: function() {
     return Notifications.find({userId: Meteor.userId(), read: false});
   },

@@ -66,16 +66,14 @@
 
       <div class="collapse navbar-collapse" id="main-nav">
       <ul class="nav navbar-nav" style="">
+           {{#if currentUser}}
           <li class="{{activeRouteClass 'reports' 'workout'}}">
             <a href="{{pathFor 'workout'}}"><b>Reports</b></a>
           </li>
-           {{#if currentUser}}
+      
           <li class="{{activeRouteClass 'reports/new' 'workoutInsert'}}">
             <a href="{{pathFor 'workoutInsert'}}">Submit report</a>
           </li> 
-             {{/if}}
-        </ul> 
-        <ul class="nav navbar-nav">
          <li class="{{activeRouteClass 'forum'}}">
           <a href="{{pathFor 'postsList'}}"><b>Forum</b></a>
         </li>
@@ -85,12 +83,14 @@
         <li class="{{activeRouteClass 'bestPosts'}}">
           <a href="{{pathFor 'bestPosts'}}">Voted</a>
         </li>
-        {{#if currentUser}}
-        <li class="{{activeRouteClass 'postSubmit'}}">
+         <li class="{{activeRouteClass 'postSubmit'}}">
           <a href="{{pathFor 'postSubmit'}}">Submit Question</a>
-        </li>
+        </li>   
+        <li class="{{activeRouteClass 'blog'}}">
+          <a href="/blog"><b>Blog</b></a>
+        </li>    
         <li class="dropdown">
-          {{> notifications}}
+          {{> HeaderNotifications}}
         </li>
         {{/if}}
       </ul>

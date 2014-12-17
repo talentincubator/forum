@@ -25,7 +25,7 @@
     </div>
       <p>
         {{pluralize votes "Vote"}},
-        submitted by {{author}},
+         <span class="small">submitted by {{author}}, {{submitted}}</span>
         <a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "comment"}}</a>
         {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
       </p>

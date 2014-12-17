@@ -1,4 +1,9 @@
 .h1progress {
 font-size: 52px;
 text-align:center;
+color:#007FBD;
+}
+
+.center {
+	text-align:center;
 }
