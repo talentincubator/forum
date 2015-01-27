@@ -4,17 +4,19 @@ Meteor.startup(function() {
   });
 
   AccountsEntry.config({
-    logo: '',   
+    logo: '',
     homeRoute: '/',
     dashboardRoute: '/',
     profileRoute: '/profile',
     language: 'en',
     showSignupCode: false,
-    extraSignUpFields: [{
+    extraSignUpFields: [
+    {
       field: "name",
       label: "Your Username",
       type: "text",
       required: true
-    }]
+    }
+    ]
   });
 });

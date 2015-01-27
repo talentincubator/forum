@@ -15,7 +15,7 @@
       <div class="col-md-2 bg_blur ">
       </div>
       <div class="col-md-8 col-xs-12">
-       <div class="header">
+       <div class="">
        <div class="row">
         <div class="col-md-12 col-xs-12" style="margin: 0px;padding: 0px;">
           <div class="col-md-4 col-xs-4 center">Reading % completed : 
@@ -43,14 +43,15 @@
 
 
 <template name="workoutInsert">
-<h3 class="blackheadline">Please self report your assignment progress and give us your feedback </h3>
+<h3 class="blackheadline">Please self report your assignment completion and give us your feedback </h3>
   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
    <form class="main form">
    <div class="row">
      
  
      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-       <h4> Homework </h4>
+       <h4 style="color: #007FBD"> Homework </h4>
+      
     <div class="form-group">
       <label class="control-label" for="title">% of reading done (public)</label>
       <div class="controls">
@@ -76,16 +77,16 @@
     </div>
 </div>
      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
- <h4> Meeting </h4>
+ <h4 style="color: #007FBD"> Meeting </h4>
     <div class="form-group">
-      <label class="control-label" for="title">Grade the previous meeting</label>
+      <label class="control-label" for="title">Grade OUR performance </label>
       <div class="controls">
         <input name="meetingGrade" id="excersices" type="text" value="" placeholder="From 1 to 10" class="form-control"/>
         <span class="help-block">{{meetingGrade}}</span>
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label" for="title">How the previous meeting could be impoved</label>
+      <label class="control-label" for="title">How the previous meeting could be improved</label>
       <div class="controls">
         <textarea name="meetingComments" rows="6" id="excersices" type="text" value="" placeholder="Share your thoughts" class="form-control"></textarea>
         <span class="help-block">{{meetingComments}}</span>

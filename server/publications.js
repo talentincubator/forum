@@ -29,6 +29,11 @@ Meteor.publish('workouts', function(id) {
 });
 
 
+Meteor.publish("courses", function(userId){
+  // check(userId, String);
+  return Courses.find();
+});
+
 Meteor.publish('singlePost', function(id) {
   check(id, String);
   return Posts.find(id);

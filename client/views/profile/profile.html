@@ -1,5 +1,6 @@
 <template name="profile">
-  <div class="profile">
+<div class="container">
+  <div class="profile" style="width:70%;background-color:inherit">
     <h2>Edit Profile</h2>
     <form>
       {{#each profileFields}}
@@ -8,7 +9,9 @@
       {{submit_button 'Update Profile'}}
     </form>
   </div>
+ </div>
 </template>
+
 
 <template name="_profileField">
   {{#if isTextField}}

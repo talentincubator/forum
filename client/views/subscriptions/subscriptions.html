@@ -1,0 +1,16 @@
+<template name="subscriberClassic">
+	<div class="form-wrapper">
+		<form class="subscriber-form">
+			<div class="form-group">
+				{{#if status}}
+					<div class="alert {{class}}">{{{message}}}</div>
+				{{/if}}
+				<input class="form-control fill-email" id="emailform" placeholder="myemail@example.com" required type="email">
+				<input class="form-control fill-email" id="courseform" placeholder="Course name" required type="">				
+			</div>		
+			<button type="submit" class="btn btn-primary subscribe-button">Subcribe</button>
+		</form>	
+	</div>
+</template>
+
+

@@ -23,6 +23,7 @@ Template.profile.events({
       name: data.name || Meteor.user().profile.name});
     console.log(moredata);
     Meteor.users.update(Meteor.userId(), {$set: {profile: moredata}});
+    Router.go('home');  
   }
 });
 

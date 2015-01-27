@@ -1,5 +1,5 @@
 <template name="home">
-  <div class="home">
+  <div class="container home">
     <div class="page-header">
       <h1>Welcome to the Talent Incubator Classroom</h1>
     </div>
@@ -22,7 +22,11 @@
   </div>
 </section>
 {{else}}
-	Please <a href="{{ pathFor 'entrySignIn' }}" class="">Sign in</a> to use classroom tools
+	
+  if you are a student in one of the programs 
+
+
+  Please <a href="{{ pathFor 'entrySignIn' }}" class="">Sign in</a> to use classroom tools
 		{{/if }} 
   </div>
 </template>

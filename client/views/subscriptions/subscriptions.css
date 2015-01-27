@@ -1,0 +1,101 @@
+.form-wrapper {
+  box-sizing: border-box;
+  background-image: repeating-linear-gradient(-41deg, #699db6 1px, #5890ad 19px, #699db6 20px, #fffae8 21px, #f5f1e5 39px, #f8fef4 40px, #000B42 41px, #000B42 59px, #000B42 60px, #fffae8 61px, #f5f1e5 79px, #f8fef4 80px, #699db6 81px, #5890ad 99px, #699db6 100px, #fffae8 101px, #f5f1e5 119px, #f8fef4 120px, #000B42 121px, #000B42 139px, #000B42 140px, #fffae8 141px, #f5f1e5 159px, #f8fef4 160px, #699db6 161px, #5890ad 179px, #699db6 180px, #fffae8 181px, #f5f1e5 199px, #f8fef4 200px, #000B42 201px, #000B42 219px, #000B42 220px, #fffae8 221px, #f5f1e5 239px, #f8fef4 240px, #699db6 241px, #5890ad 259px, #699db6 260px, #fffae8 261px, #f5f1e5 279px, #f8fef4 280px, #000B42 281px, #000B42 299px, #000B42 300px, #fffae8 301px, #f5f1e5 319px, #f8fef4 320px);
+  background-size: cover;
+  padding: 10px;
+  width: 100%;
+}
+.form-wrapper * {
+  box-sizing: border-box;
+}
+.form-wrapper .alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.form-wrapper .alert-success {
+  background: #cfe3d1;
+  color: #20553c;
+  border-color: #aec7b0;
+}
+.form-wrapper .alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.form-wrapper form {
+  width: 100%;
+  margin: 0;
+  background: #f7f7f7;
+  padding: 30px;
+  border: 1px dotted rgba(0,0,0,0.1);
+}
+.form-wrapper form .form-group {
+  margin-bottom: 15px;
+}
+.form-wrapper form .form-group .form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  line-height: 1.428571429;
+  vertical-align: middle;
+}
+.form-wrapper form .fill-email {
+  background: #f5f3ed;
+  box-shadow: 0 1px 1px #ccc0a4 inset, 0 -1px 0 #e6e1d7 inset, 0 1px 0 #fefefd;
+  color: #7b745e;
+  padding-left: 20px !important;
+  border: 0;
+  border-radius: 44px;
+  font-size: 13px;
+  font-weight: bold;
+  height: 44px;
+  outline: 0;
+}
+.form-wrapper form .subscribe-button {
+  background-color: #699db6;
+  border-color: rgba(0,0,0,0.3);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+  color: #fff;
+  width: 100%;
+  border-radius: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+.form-wrapper form .subscribe-button:hover {
+  background-color: #5890ad;
+  border-color: rgba(0,0,0,0.5);
+}
+@-moz-keyframes bg-animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+@-webkit-keyframes bg-animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+@-o-keyframes bg-animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+@keyframes bg-animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}

@@ -1,12 +1,12 @@
 Meteor.startup(function() {
   if(Meteor.isClient) {
     SEO.config({
-      title: 'Project Title',
+      title: 'TI Classroom',
       meta: {
-        'description': 'A project by Differential.io'
+        'description': 'Talent Incubator Classroom'
       },
       og: {
-        'image': Meteor.absoluteUrl('share-image.png')
+        'image': Meteor.absoluteUrl('images/favicons/favicon.ico')
       },
       ignore: {
         meta: ['fragment', 'viewport', 'msapplication-TileColor', 'msapplication-TileImage', 'msapplication-config'],

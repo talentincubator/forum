@@ -1,0 +1,201 @@
+<template name="programs">
+
+
+
+<section id="parallax4" style='min-height: 200px;'>
+    <div class="bg6"></div>
+    <div class="pattern"></div>
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <div class="vertical-text" style='height: 200px;'>
+            <br>
+            <div class="span12">
+              <div class="vertical-text" style='color:#fff;position: relative; height:inherit;text-align:left;'>
+                <div class='lead' style='font-size: 40px; width: 100%; padding:0;margin-top:0px;'>
+                Προγραμματα - Μαθηματα
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container the_curriculum">
+      <section>
+        <div class="row">
+          <div class="span12">
+            <h3><span class='color-text'>#</span> JS 101</h3>
+            <hr>
+            <p class='normtext'>Το να είσαι καλός developer δεν σημαίνει μόνο να ξέρεις τα τελευταία frameworks και γλώσσες, αλλά να γράφεις αποτελεσματικό και καλό κώδικα. Γι’αυτό το λόγο ξεκινάμε με ένα καλό overview στα θεμελιώδη της πληροφορικής.</p>
+              <div class="span4">
+                <h5>Προγραμμα</h5>
+                <p>Τα Data Structures είναι θεμελιώδης γνώση, καθώς επιτρέπει τους developers να δουλεύουν με πολύπλοκα δεδομένα, ενώ ταυτόχρονα μειώνουν την χρήση CPU και Memory. Εδώ θα μάθουμε τα πιο σημαντικά data structures, όπως arrays, hash tables, lists, trees και heaps όχι μόνο να τα χρησιμοποιούμε αλλά και να τα γράφουμε μόνοι μας. </p>
+              </div>
+              <div class="span4">
+                <h5>Στοχοι</h5>
+                <p>Το να καταλαβαίνει κάποιος αλγόριθμους είναι βασικό μέρος του να είσαι developer. Εδώ θα μάθουμε να γράφουμε όλους τους απαραίτητους αλγορίθμους όπως searching, encryption, αλλά και ποιον να χρησιμοποιείσετε κάθε φορά. </p>
+              </div>
+              <div class="span3">
+                <h5>Δηλωσε ενδιαφερων και οταν συμπληρωθουν > 5 ατομα θα σε ενημερωσουμε </h5>
+                <div style="text-align:center;">
+              {{#if currentUser}}
+              <button type="button" data="js101" class="coursebutton btn btn-default white">
+                Interested - Count me in
+              </button>
+            {{else}}
+             <div class="">
+                <a href="{{ pathFor 'entrySignIn' }}" class="btn btn-default white">Sign in</a>
+             </div>
+            {{/if}}
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="span12">
+            <h3><span class='color-text'>#</span> NodeJS 101</h3>
+            <hr>
+            <p class='normtext'>Ένας πολύ καλός developer ξεκινά με το να είναι πολύ καλός στο κώδικα. Θα δουλέψουμε πολύ στο να γίνετε πολύ δυνατοί στον κώδικα, μετά θα προχωρήσουμε σε frameworks και τέλος σε full-stack applications.</p>
+              <div class="span3">
+                <h5>Object-Oriented Programming</h5>
+                <p>Object-Oriented programming είναι ο πιο δημοφιλής τρόπος σε σχεδιασμό, τμηματικών, επαναχρησιμοποίησιμων δομών. Θα μάθετε Object-Oriented σε javascipt και πως δουλεύετε σήμερα στο internet.</p>
+              </div>
+              <div class="span3">
+                <h5>Asynchronous Programming</h5>
+                <p>Asynchronous programming είναι ένα από τα πιο συναρπαστικά χαρακτηριστικά του προγραμματισμού σε JS/Node.js. Θα μάθετε να δουλεύετε callbacks και την χρήση των δημοφιλών βιβλιοθηκών.</p>
+              </div>
+              <div class="span3">
+                <h5>Recursion</h5>
+                <p>Recursion είναι μια προηγμένη μέθοδος για την επίλυση προβλημάτων με βάση τη στρατηγική επαχρησιμοποίησης κωδικα. Είναι ευρέως δοκιμασμένη σε συνεντεύξεις και συνήθως χρησιμοποιείται για την επίλυση περίπλοκων αλγορίθμων.</p>
+              </div>
+              <div class="span3">
+                {{#if currentUser}}
+                <button type="button" data="node101" class="coursebutton btn btn-default white">
+                  Interested - Count me in
+                </button>
+                {{else}}
+                <div class="">
+                  <a href="{{ pathFor 'entrySignIn' }}" class="btn btn-default white">Sign in</a>
+                </div>
+                {{/if}}
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="span12">
+            <h3><span class='color-text'>#</span> Angular 101</h3>
+            <hr>
+              <div class="span4">
+                <h5>Angular.js/JavaScript MVC</h5>
+                <p>Η JavaScript επαναπροσδιορίζει το τι σημαίνει μια σύγχρονη web εφαρμογή. Θα ξεκινήσουμε με τη χρήση jQuery για απλές αλλαγές στην σελίδα και να προχωρήσουμε να μελετήσουμε τα σχεδιαστικά πρότυπα του "Single Page Web Applications" με Angular.js. Θα ξέρετε πως να χρησιμοποιείτε JavaScript MVC για την κατασκευή προηγμένων εφαρμογών web client, όπως το Gmail, το Facebook και το Google Maps.</p>
+              </div>
+              <div class="span4">
+                <h5>HTML5</h5>
+                <p>Η HTML είναι markup γλώσσα που τα ξεκίνησε όλα και παραμένει η ραχοκοκαλιά του web. Η HTML5 προσθέτει νέες ετικέτες και τις νέες δυνατότητες στο web browsers. Η HTML είναι από τις ευκολότερες γλώσσες και ταυτόχρονα είναι και πολύ χρήσιμη.</p>
+              </div>
+              <div class="span3">
+                  {{#if currentUser}}
+                  <button type="button" data="angular101" class="coursebutton btn btn-default white">
+                    Interested - Count me in
+                  </button>
+                  {{else}}
+                  <div class="">
+                    <a href="{{ pathFor 'entrySignIn' }}" class="btn btn-default white">Sign in</a>
+                  </div>
+                  {{/if}}
+
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="row">
+          <div class="span12">
+            <h3><span class='color-text'>#</span> MongoDB 101</h3>
+            <hr>
+              <div class="span4">
+                <h5>Node.js/Express</h5>
+                <p>Η JavaScript είναι μια απίστευτα ευέλικτη και δημοφιλής γλώσσα και θα γίνει γρήγορα το «lingua franca» του web. Η Node.js (JavaScript back-end) έχει γίνει ο κυρίαρχος της επόμενης γενιάς backend web development.</p>
+                <p></p>
+              </div>
+              <div class="span4">
+                <h5>Services and Apis</h5>
+                <p>Ta APIs μας επιτρέπουν να συνδέουμε τεράστια μεγέθη δεδομένων με μεγάλη λειτουργικότητα. Για παράδειγμα, θα μάθουμε για τα συστήματα ελέγχου ταυτότητας μέσω OAuth και τα συστήματα πληρωμών με χρήση APIs από παρόχους όπως Stripe και Balanced.</p>
+              </div>
+              <div class="span3">
+                {{#if currentUser}}
+                <button type="button" data="mongodb101" class="coursebutton btn btn-default white">
+                  Interested - Count me in
+                </button>
+                {{else}}
+                <div class="">
+                  <a href="{{ pathFor 'entrySignIn' }}" class="btn btn-default white">Sign in</a>
+                </div>
+                {{/if}}
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="span12">
+            <h3><span class='color-text'>#</span> HTML 101 </h3>
+            <hr>
+              <div class="span4">
+                <h5>SQL</h5>
+                <p>Η SQL είναι η γλώσσα που χρησιμοποιείτε ευρέως στην επικοινωνία των web εφαρμογών, για την αποστολή και ανάκτηση δεδομένων από τη βάση δεδομένων. Θα μάθουμε να γράφουμε SQL και στη συνέχεια πώς να αποφύγουμε να γράφουμε όταν δεν χρειάζεται.</p>
+              </div>
+              <div class="span4">
+                <h5>MongoDB/NoSQL</h5>
+                <p>Πέρα από τις παραδοσιακές βάσεις δεδομένων, υπάρχει μια μεγάλη ποικιλία από "NoSQL" datastores που εξυπηρετούν διαφορετικές ανάγκες. Θα μάθετε πώς να σκέφτεστε για το που και γιατί να χρησιμοποιούν αυτές τις νέες τεχνολογίες.</p>
+              </div>
+              <div class="span3">
+                {{#if currentUser}}
+                <button type="button" data="html101" class="coursebutton btn btn-default white">
+                  Interested - Count me in
+                </button>
+                {{else}}
+                <div class="">
+                  <a href="{{ pathFor 'entrySignIn' }}" class="btn btn-default white">Sign in</a>
+                </div>
+                {{/if}}
+              </div>
+          </div>
+          </div>
+      </section>
+
+    <br>
+    <br>
+
+      <div class="row">
+        <div class="span12">
+          <div class="info-block">
+            <h3>ΓΝΩΣΗ ΤΩΝ ΑΠΑΙΤΗΣΕΩΝ ΤΗΣ ΑΓΟΡΑΣ ΚΑΙ ΤΗΣ ΚΑΤΕΥΘΥΝΣΗΣ ΤΗΣ ΤΕΧΝΟΛΟΓΙΑΣ </h3>
+
+            <p class='normtext'>Το πρόγραμμα σπουδών θα βασίζεται στα τελευταία trends του web development. Θα σας εκπαιδεύσουμε όχι μόνο να καταλαβαίνετε τις τελευταίες τεχνολογίες αλλά να θέλετε να ανακαλύπτετε ότι καινούριο συμβαίνει και να το μαθαίνετε μόνοι σας. </p>
+
+            <p class='normtext'>Επιλέγουμε να δουλεύουμε καταρχάς με JavaScript καθώς είναι η πιο διάσημη και χρησιμοποιούμενη γλώσσα προγραμματισμού στο κόσμο. Το μέλλον στο web είναι δυναμικό , real-time και με την JavaScript θα μπορείτε να ανταποκριθείτε. Στη συνέχεια θα σας παρουσιάσουμε την Ruby on Rails ή την Python/Django που και τα δύο είναι διαδεδομένα και εύκολα frameworks και χρησιμοποιούνται από πολλές εταιρίες. </p>
+            <div style="text-align:center;margin: 20px 0 0px 0px">
+              <a href='apply.html' style="border:none"><button type="submit" class="btn white">Κανε αιτηση</button></a>
+            </div>
+          </div>
+          <!-- End Info Block -->
+        </div>
+
+      </div>
+      <br>
+    </div>
+</template>
