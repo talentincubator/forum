@@ -1,6 +1,8 @@
-Template.programs.helpers({
-  get: function(){
-
+Template.share.helpers({
+  url: function (){
+    var uri = Router.current().url;
+    
+    return decodeURIComponent(uri);
   }
 });
 

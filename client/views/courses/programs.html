@@ -25,19 +25,89 @@
   </section>
 
   <div class="container the_curriculum">
-      <section>
+     <section>
         <div class="row">
-          <div class="span12">
-            <h3><span class='color-text'>#</span> JS 101</h3>
+          <div class="span2" style="text-align:center">
+          <img alt=" HTML5 & CSS " class="badge-img" height="80" width="90" src="images/courses/htmlcss.png">
+         </div>
+         <div class="span10">
+            <h3><span class='color-text'>#</span> Intro to CS : HTML5 & CSS</h3>
             <hr>
-            <p class='normtext'>Το να είσαι καλός developer δεν σημαίνει μόνο να ξέρεις τα τελευταία frameworks και γλώσσες, αλλά να γράφεις αποτελεσματικό και καλό κώδικα. Γι’αυτό το λόγο ξεκινάμε με ένα καλό overview στα θεμελιώδη της πληροφορικής.</p>
+          </div>
+             <div class="span12">
+            <p class='normtext'>Η HTML είναι markup γλώσσα που τα ξεκίνησε όλα και παραμένει η ραχοκοκαλιά του web. Η HTML5 προσθέτει νέες ετικέτες και τις νέες δυνατότητες στο web browsers. Η HTML είναι από τις ευκολότερες γλώσσες και ταυτόχρονα είναι και πολύ χρήσιμη.</p>
               <div class="span4">
-                <h5>Προγραμμα</h5>
-                <p>Τα Data Structures είναι θεμελιώδης γνώση, καθώς επιτρέπει τους developers να δουλεύουν με πολύπλοκα δεδομένα, ενώ ταυτόχρονα μειώνουν την χρήση CPU και Memory. Εδώ θα μάθουμε τα πιο σημαντικά data structures, όπως arrays, hash tables, lists, trees και heaps όχι μόνο να τα χρησιμοποιούμε αλλά και να τα γράφουμε μόνοι μας. </p>
+                <h5>Learning Points</h5>
+                <ul class="list-group">
+                  <li class="list-group-item">Intro to CS</li>
+                  <li class="list-group-item">HTML / CSS</li>
+                  <li class="list-group-item">Bootstrap</li>
+                 <li class="list-group-item">Intro to Programming</li>
+                 
+                </ul>
               </div>
               <div class="span4">
-                <h5>Στοχοι</h5>
-                <p>Το να καταλαβαίνει κάποιος αλγόριθμους είναι βασικό μέρος του να είσαι developer. Εδώ θα μάθουμε να γράφουμε όλους τους απαραίτητους αλγορίθμους όπως searching, encryption, αλλά και ποιον να χρησιμοποιείσετε κάθε φορά. </p>
+                <h5>Logistics</h5>
+               <ul class="list-group">
+
+                  <li class="list-group-item">Project 1 : TBA</li>
+                   <li class="list-group-item">Project 2 : TBA</li>                  
+                   <li class="list-group-item">Price : 200e (for discount see main page)</li>
+                   <li class="list-group-item"> Meetings : 8 meetings in total. Two evenings per week, 19:00-21:00 for 4 weeks</li>
+                </ul>
+              </div>
+              <div class="span3">
+                <h5>Δηλωσε ενδιαφερων και οταν συμπληρωθουν > 5 ατομα θα σε ενημερωσουμε </h5>
+                <div style="text-align:center;">
+              {{#if currentUser}}
+              <button type="button" data="html101" class="coursebutton btn btn-default white">
+                Interested - Count me in
+              </button>
+              {{> share}}
+            {{else}}
+             <div class="">
+                <a href="{{ pathFor 'entrySignIn' }}" class="btn btn-default white">Sign in</a>
+             </div>
+             {{> share}}
+            {{/if}}
+                </div>
+              </div>
+            </div>
+        </div>
+        <hr>
+      </section>
+
+
+      <section>
+        <div class="row">
+          <div class="span2" style="text-align:center">
+          <img alt=" Javascript 101 " class="badge-img" height="80" width="90" src="images/courses/jspart1.jpg">
+         </div>
+         <div class="span10">
+            <h3><span class='color-text'>#</span> JS 101</h3>
+            <hr>
+          </div>
+             <div class="span12">
+            <p class='normtext'>Το να είσαι καλός developer δεν σημαίνει μόνο να ξέρεις τα τελευταία frameworks και γλώσσες, αλλά να γράφεις αποτελεσματικό και καλό κώδικα. Γι’αυτό το λόγο ξεκινάμε με ένα καλό overview στα θεμελιώδη της JS.</p>
+              <div class="span4">
+                <h5>Learning Points</h5>
+                <ul class="list-group">
+                  <li class="list-group-item">Operators - Functions</li>
+                  <li class="list-group-item">Object Oriented Programing</li>
+                  <li class="list-group-item">Events</li>
+                 <li class="list-group-item">Using APIs</li>
+                 
+                </ul>
+              </div>
+              <div class="span4">
+                <h5>Logistics</h5>
+               <ul class="list-group">
+
+                  <li class="list-group-item">Project 1 : Simple HTML5 game</li>
+                   <li class="list-group-item">Project 2 : Simple Authorization system</li>                  
+                   <li class="list-group-item">Price : 200e (for discount see main page)</li>
+                   <li class="list-group-item"> Meetings : 8 meetings in total. Two evenings per week, 19:00-21:00 for 4 weeks</li>
+                </ul>
               </div>
               <div class="span3">
                 <h5>Δηλωσε ενδιαφερων και οταν συμπληρωθουν > 5 ατομα θα σε ενημερωσουμε </h5>
@@ -46,23 +116,233 @@
               <button type="button" data="js101" class="coursebutton btn btn-default white">
                 Interested - Count me in
               </button>
+              {{> share}}
             {{else}}
              <div class="">
                 <a href="{{ pathFor 'entrySignIn' }}" class="btn btn-default white">Sign in</a>
              </div>
+             {{> share}}
             {{/if}}
                 </div>
               </div>
             </div>
         </div>
+        <hr>
       </section>
 
       <section>
         <div class="row">
+          <div class="span2" style="text-align:center">
+          <img alt=" NodeJS 101 " class="badge-img" height="80" width="90" src="images/courses/nodejs.png">
+         </div>
+         <div class="span10">
+            <h3><span class='color-text'>#</span> NodeJS 101</h3>
+            <hr>
+          </div>
+             <div class="span12">
+            <p class='normtext'>Η JavaScript είναι μια απίστευτα ευέλικτη και δημοφιλής γλώσσα και θα γίνει γρήγορα το «lingua franca» του web. Η Node.js (JavaScript back-end) έχει γίνει ο κυρίαρχος της επόμενης γενιάς backend web development.</p>
+              <div class="span4">
+                <h5>Learning Points</h5>
+                <ul class="list-group">
+                  <li class="list-group-item">Server Side</li>
+                  <li class="list-group-item">Intro to MongoDB and ExpressJS</li>
+                  <li class="list-group-item">SocketIO</li>
+                 <li class="list-group-item">Persisting Data</li>
+                 
+                </ul>
+              </div>
+              <div class="span4">
+                <h5>Logistics</h5>
+               <ul class="list-group">
+
+                  <li class="list-group-item">Project 1 : A Blog with comments</li>
+                   <li class="list-group-item">Project 2 : </li>                  
+                   <li class="list-group-item">Price : 200e (for discount see main page)</li>
+                   <li class="list-group-item"> Meetings : 8 meetings in total. Two evenings per week, 19:00-21:00 for 4 weeks</li>
+                </ul>
+              </div>
+              <div class="span3">
+                <h5>Δηλωσε ενδιαφερων και οταν συμπληρωθουν > 5 ατομα θα σε ενημερωσουμε </h5>
+                <div style="text-align:center;">
+              {{#if currentUser}}
+              <button type="button" data="node101" class="coursebutton btn btn-default white">
+                Interested - Count me in
+              </button>
+              {{> share}}
+            {{else}}
+             <div class="">
+                <a href="{{ pathFor 'entrySignIn' }}" class="btn btn-default white">Sign in</a>
+             </div>
+             {{> share}}
+            {{/if}}
+                </div>
+              </div>
+            </div>
+        </div>
+        <hr>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="span2" style="text-align:center">
+          <img alt=" AngularJS 101 " class="badge-img" height="80" width="90" src="images/courses/angularjs.png">
+         </div>
+         <div class="span10">
+            <h3><span class='color-text'>#</span> AngularJS 101</h3>
+            <hr>
+          </div>
+             <div class="span12">
+            <p class='normtext'>"Single Page Web Applications" με Angular.js. Θα ξέρετε πως να χρησιμοποιείτε JavaScript MVC για την κατασκευή προηγμένων εφαρμογών web client, όπως το Gmail, το Facebook και το Google Maps.</p>
+              <div class="span4">
+                <h5>Learning Points</h5>
+                <ul class="list-group">
+                  <li class="list-group-item">TBA</li>
+                  <li class="list-group-item"></li>
+                  <li class="list-group-item"></li>
+                 <li class="list-group-item"></li>
+                 
+                </ul>
+              </div>
+              <div class="span4">
+                <h5>Logistics</h5>
+               <ul class="list-group">
+
+                  <li class="list-group-item">Project 1 : </li>
+                   <li class="list-group-item">Project 2 : </li>                  
+                   <li class="list-group-item">Price : 200e (for discount see main page)</li>
+                   <li class="list-group-item"> Meetings : 8 meetings in total. Two evenings per week, 19:00-21:00 for 4 weeks</li>
+                </ul>
+              </div>
+              <div class="span3">
+                <h5>Δηλωσε ενδιαφερων και οταν συμπληρωθουν > 5 ατομα θα σε ενημερωσουμε </h5>
+                <div style="text-align:center;">
+              {{#if currentUser}}
+              <button type="button" data="angular101" class="coursebutton btn btn-default white">
+                Interested - Count me in
+              </button>
+              {{> share}}
+            {{else}}
+             <div class="">
+                <a href="{{ pathFor 'entrySignIn' }}" class="btn btn-default white">Sign in</a>
+             </div>
+             {{> share}}
+            {{/if}}
+                </div>
+              </div>
+            </div>
+        </div>
+        <hr>
+      </section>
+
+ <section>
+        <div class="row">
+          <div class="span2" style="text-align:center">
+          <img alt=" MeteorJS 101 " class="badge-img" height="80" width="90" src="images/courses/meteor.png">
+         </div>
+         <div class="span10">
+            <h3><span class='color-text'>#</span> MeteorJS 101</h3>
+            <hr>
+          </div>
+             <div class="span12">
+            <p class='normtext'></p>
+              <div class="span4">
+                <h5>Learning Points</h5>
+                <ul class="list-group">
+                  <li class="list-group-item">MVC</li>
+                  <li class="list-group-item">Intro to Mongo - Data binding</li>
+                  <li class="list-group-item">Real time webapps</li>
+                 <li class="list-group-item">Packages</li>
+                 
+                </ul>
+              </div>
+              <div class="span4">
+                <h5>Logistics</h5>
+               <ul class="list-group">
+
+                  <li class="list-group-item">Project 1 : A project management app </li>
+                   <li class="list-group-item">Project 2 : </li>                  
+                   <li class="list-group-item">Price : 200e (for discount see main page)</li>
+                   <li class="list-group-item"> Meetings : 8 meetings in total. Two evenings per week, 19:00-21:00 for 4 weeks</li>
+                </ul>
+              </div>
+              <div class="span3">
+                <h5>Δηλωσε ενδιαφερων και οταν συμπληρωθουν > 5 ατομα θα σε ενημερωσουμε </h5>
+                <div style="text-align:center;">
+              {{#if currentUser}}
+              <button type="button" data="meteor101" class="coursebutton btn btn-default white">
+                Interested - Count me in
+              </button>
+              {{> share}}
+            {{else}}
+             <div class="">
+                <a href="{{ pathFor 'entrySignIn' }}" class="btn btn-default white">Sign in</a>
+             </div>
+             {{> share}}
+            {{/if}}
+                </div>
+              </div>
+            </div>
+        </div>
+        <hr>
+      </section>
+      <section>
+        <div class="row">
+          <div class="span2" style="text-align:center">
+          <img alt=" MongoDB " class="badge-img" height="80" width="90" src="images/courses/mongodb.png">
+         </div>
+         <div class="span10">
+            <h3><span class='color-text'>#</span> MongoDB</h3>
+            <hr>
+          </div>
+             <div class="span12">
+            <p class='normtext'>[]</p>
+              <div class="span4">
+                <h5>Learning Points</h5>
+                <ul class="list-group">
+                  <li class="list-group-item">CRUD</li>
+                  <li class="list-group-item">Schema design</li>
+                  <li class="list-group-item">Performance</li>
+                 <li class="list-group-item">Mongoose</li>
+                 
+                </ul>
+              </div>
+              <div class="span4">
+                <h5>Logistics</h5>
+               <ul class="list-group">
+
+                  <li class="list-group-item">Project 1 : </li>
+                   <li class="list-group-item">Project 2 : </li>                  
+                   <li class="list-group-item">Price : 200e (for discount see main page)</li>
+                   <li class="list-group-item"> Meetings : 8 meetings in total. Two evenings per week, 19:00-21:00 for 4 weeks</li>
+                </ul>
+              </div>
+              <div class="span3">
+                <h5>Δηλωσε ενδιαφερων και οταν συμπληρωθουν > 5 ατομα θα σε ενημερωσουμε </h5>
+                <div style="text-align:center;">
+              {{#if currentUser}}
+              <button type="button" data="mongodb101" class="coursebutton btn btn-default white">
+                Interested - Count me in
+              </button>
+              {{> share}}
+            {{else}}
+             <div class="">
+                <a href="{{ pathFor 'entrySignIn' }}" class="btn btn-default white">Sign in</a>
+             </div>
+             {{> share}}
+            {{/if}}
+                </div>
+              </div>
+            </div>
+        </div>
+        <hr>
+      </section>
+
+     <!--  <section>
+        <div class="row">
           <div class="span12">
             <h3><span class='color-text'>#</span> NodeJS 101</h3>
             <hr>
-            <p class='normtext'>Ένας πολύ καλός developer ξεκινά με το να είναι πολύ καλός στο κώδικα. Θα δουλέψουμε πολύ στο να γίνετε πολύ δυνατοί στον κώδικα, μετά θα προχωρήσουμε σε frameworks και τέλος σε full-stack applications.</p>
+            <p class='normtext'>Η JavaScript επαναπροσδιορίζει το τι σημαίνει μια σύγχρονη web εφαρμογή και ένας πολύ καλός developer ξεκινά με το να είναι πολύ καλός στο κώδικα. </p>
               <div class="span3">
                 <h5>Object-Oriented Programming</h5>
                 <p>Object-Oriented programming είναι ο πιο δημοφιλής τρόπος σε σχεδιασμό, τμηματικών, επαναχρησιμοποίησιμων δομών. Θα μάθετε Object-Oriented σε javascipt και πως δουλεύετε σήμερα στο internet.</p>
@@ -175,7 +455,7 @@
               </div>
           </div>
           </div>
-      </section>
+      </section> -->
 
     <br>
     <br>
@@ -187,10 +467,23 @@
 
             <p class='normtext'>Το πρόγραμμα σπουδών θα βασίζεται στα τελευταία trends του web development. Θα σας εκπαιδεύσουμε όχι μόνο να καταλαβαίνετε τις τελευταίες τεχνολογίες αλλά να θέλετε να ανακαλύπτετε ότι καινούριο συμβαίνει και να το μαθαίνετε μόνοι σας. </p>
 
-            <p class='normtext'>Επιλέγουμε να δουλεύουμε καταρχάς με JavaScript καθώς είναι η πιο διάσημη και χρησιμοποιούμενη γλώσσα προγραμματισμού στο κόσμο. Το μέλλον στο web είναι δυναμικό , real-time και με την JavaScript θα μπορείτε να ανταποκριθείτε. Στη συνέχεια θα σας παρουσιάσουμε την Ruby on Rails ή την Python/Django που και τα δύο είναι διαδεδομένα και εύκολα frameworks και χρησιμοποιούνται από πολλές εταιρίες. </p>
-            <div style="text-align:center;margin: 20px 0 0px 0px">
-              <a href='apply.html' style="border:none"><button type="submit" class="btn white">Κανε αιτηση</button></a>
+            <p class='normtext'>Επιλέγουμε να δουλεύουμε καταρχάς με JavaScript καθώς είναι η πιο διάσημη και χρησιμοποιούμενη γλώσσα προγραμματισμού στο κόσμο. Το μέλλον στο web είναι δυναμικό , real-time και με την JavaScript θα μπορείτε να ανταποκριθείτε. </p>
+            <br>
+            {{#if currentUser}}
+            {{else}}
+            <div class="row page-gray not-ready" style="margin-bottom:0px">
+              <div class="span8 offset2">
+                <h3 class='marker-lead'>Δεν εισαι ετοιμος ? </h3>
+
+                <p class='normtext'>Άμα θέλετε δώστε μας το email σας για να σας στείλουμε πληροφορίες και δωρεάν υλικό.</p> 
+                <div>
+                  {{> subscriberClassic}}
+                </div>
+              </div>
+
             </div>
+            {{/if}}
+
           </div>
           <!-- End Info Block -->
         </div>
@@ -198,4 +491,12 @@
       </div>
       <br>
     </div>
+</template>
+
+
+<template name="share">
+<div class="share-buttons">
+  <a target="_blank" class="btn btn-facebook fb-share" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]={{url}}&amp;p[title]=JS courses&amp;p[summary]=Learn JS/NodeJS/Angular"><i class="fa fa-facebook"></i><span class="hidden-sm hidden-xs"> Share on Facebook </span></a>
+    <a class="btn btn-twitter tw-share" href="https://twitter.com/intent/tweet?url={{url}}&amp;text=Learn JS/NodeJS/Angular"><i class="fa fa-twitter"></i><span class="hidden-sm hidden-xs"> Share on Twitter </span></a>
+</div>
 </template>
