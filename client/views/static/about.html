@@ -1,6 +1,14 @@
 <template name="about">
+	<style type="text/css">
+		.bg6{
+			background:url(/images/class1.jpg)30% 30% repeat-y fixed, url(/images/parallax/class1.jpg) 30% 30% repeat-y scroll;
+		}
+		.profile {
+			border-bottom: none;
+		}
+	</style>
 
-<section id="parallax4" style='min-height: 200px;'>
+	<section id="parallax4" style='min-height: 250px;'>
 		<div class="bg6"></div>
 		<div class="pattern"></div>
 		<div class="container">
@@ -12,7 +20,6 @@
 							<div class="vertical-text" style='color:#fff;position: relative; height:inherit;text-align:left;'>
 								<div class='lead' style='font-size: 40px; width: 100%; padding:0;margin-top:0px;'>
 									Ποιός ? Που ? Γιατί ?  
-
 								</div>
 							</div>
 						</div>
@@ -44,92 +51,157 @@
 				</div>
 				<div class="container">
 					<div class="row">
-						<div class="span12">
-
-								<div class="panels-item span6">
-									<i class="icon ion-coffee text-color-theme"></i>
-									<h5><b>ΑΚΟΥΜΕ ΤΗΝ ΑΓΟΡΑ </b></h5>
-									<p>Διδάσκουμε computer science μέσω JavaScript. Η JavaScript είναι εδώ και θα γίνετε όλο και πιο  <a href="http://venturebeat.com/2011/08/16/linkedin-node/"> απαραίτητη</a> <a href="http://www.techworld.com.au/article/536950/rise_rise_javascript/">κάθε </a> <a href="http://adambard.com/blog/top-github-languages-for-2013-so-far/">μέρα</a>. Σήμερα το internet ζητάει real-time, interactivity και δυναμικά εργαλεία σε JavaScript.</p>
-								</div>
-								<div class="panels-item span6">
-									<i class="icon ion-clock text-color-theme"></i>
-									<h5><b>Δεν σκοπευουμε να γινουμε πλουσιοι απο αυτο</b></h5>
-									<p>Αυτοσκοπός δεν είναι να δημιουργήσουμε μόνο developers, αλλά να βρούμε τις λύσεις που θέλει η αγορά. Τα vouchers από τον ΟΑΕΔ δεν είναι λύση,  το να μαθαίνεις κάτι πραγματικά χρήσιμο που πληρώνεται από την αγορά όμως είναι. </p>
-								</div>
-							</div> <!-- /row -->
-
-							<div class="row">
-								<div class="panels-item span6">
-									<i class="icon ion-speedometer text-color-theme"></i>
-									<h5><b>ΜΑΘΗΜΑΤΑ ΠΡΙΝ ΞΕΚΙΝΗΣΟΥΜΕ </b> </h5>
-									<p>Δεν θέλουμε μόνο τους μηχανικούς αλλά κάθε άτομο που είναι διατεθειμένο να μάθει. Πριν το πρόγραμμα με τη βοήθεια ενός εκπαιδευτή θα πρέπει να δουλέψεις σε ένα πρόγραμμα ώστε να είσαι έτοιμος και να πάρεις το εκατό τις εκατό από την πρώτη μέρα. </p>
-								</div>
-								<div class="panels-item span6">
-									<i class="icon ion-clipboard text-color-theme"></i>
-									<h5><b>ΛΙΓΟΙ ΚΑΙ ΚΑΛΟΙ</b></h5>
-									<p>Φτιάχνουμε ένα πρόγραμμα που θα μπορούν να το ακολουθήσουν μόνο όσοι πραγματικά είναι αποφασισμένοι να μάθουν. Δεν μας ενδιαφέρει να έχουμε άτομα αλλά τα άτομα που τελειώνουν να είναι περιζήτητα.  </p>
-								</div>
-							</div> <!-- /row -->
-
-							<div class="row">
-								<div class="panels-item span6">
-									<i class="icon ion-paper-airplane text-color-theme"></i>
-									<h5><b>ΑΠΑΙΤΗΣΕΙΣ ΠΟΥ ΔΕΝ ΕΙΝΑΙ ΓΙΑ ΟΛΟΥΣ </b></h5>
-									<p>Είμαστε εδώ για να σας πιέσουμε στα όρια σας. Αν δεν είστε έτοιμοι για διάβασμα και καθημερινά projects, αυτό δεν είναι το μέρος για εσάς. Εδώ σκοπό έχουμε να βγάλουμε πραγματικούς επαγγελματίες και αυτό γίνετε μόνο με προσήλωση από την πλευρά σας. </p>
-								</div>
-								<div class="panels-item span6">
-									<i class="icon ion-clock text-color-theme"></i>
-									<h5><b> ΚΑΘΗΓΗΤΕΣ ΜΕ ΠΡΑΚΤΙΚΗ ΓΝΩΣΗ</b></h5>
-									<p>Τα άτομα που θα διδάξουν θα έχουν αποδεδειγμένη πρακτική εμπειρία και θα μπορούν να μεταδώσουν αυτή τη γνώση.  </p>
-								</div>
-
-							</div> 
-
-
-
+						<div class="panels-item span5">
+							<i class="icon ion-coffee text-color-theme"></i>
+							<h5><b>ΑΚΟΥΜΕ ΤΗΝ ΑΓΟΡΑ </b></h5>
+							<p>Διδάσκουμε computer science μέσω JavaScript. Η JavaScript είναι εδώ και θα γίνετε όλο και πιο  <a href="http://venturebeat.com/2011/08/16/linkedin-node/"> απαραίτητη</a> <a href="http://www.techworld.com.au/article/536950/rise_rise_javascript/">κάθε </a> <a href="http://adambard.com/blog/top-github-languages-for-2013-so-far/">μέρα</a>. Σήμερα το internet ζητάει real-time, interactivity και δυναμικά εργαλεία σε JavaScript.</p>
+						</div>
+						<div class="panels-item span5">
+							<i class="icon ion-clock text-color-theme"></i>
+							<h5><b>Δεν σκοπευουμε να γινουμε πλουσιοι απο αυτο</b></h5>
+							<p>Αυτοσκοπός δεν είναι να δημιουργήσουμε μόνο developers, αλλά να βρούμε τις λύσεις που θέλει η αγορά. Τα vouchers από τον ΟΑΕΔ δεν είναι λύση,  το να μαθαίνεις κάτι πραγματικά χρήσιμο που πληρώνεται από την αγορά όμως είναι. </p>
+						</div>
+					</div>
+					<div class="row">			
+						<div class="panels-item span5">
+							<i class="icon ion-speedometer text-color-theme"></i>
+							<h5><b>ΜΑΘΗΜΑΤΑ ΠΡΙΝ ΞΕΚΙΝΗΣΟΥΜΕ </b> </h5>
+							<p>Δεν θέλουμε μόνο τους μηχανικούς αλλά κάθε άτομο που είναι διατεθειμένο να μάθει. Πριν το πρόγραμμα με τη βοήθεια ενός εκπαιδευτή θα πρέπει να δουλέψεις σε ένα πρόγραμμα ώστε να είσαι έτοιμος και να πάρεις το εκατό τις εκατό από την πρώτη μέρα. </p>
+						</div>
+						<div class="panels-item span5">
+							<i class="icon ion-clipboard text-color-theme"></i>
+							<h5><b>ΛΙΓΟΙ ΚΑΙ ΚΑΛΟΙ</b></h5>
+							<p>Φτιάχνουμε ένα πρόγραμμα που θα μπορούν να το ακολουθήσουν μόνο όσοι πραγματικά είναι αποφασισμένοι να μάθουν. Δεν μας ενδιαφέρει να έχουμε άτομα αλλά τα άτομα που τελειώνουν να είναι περιζήτητα.  </p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="panels-item span5">
+							<i class="icon ion-paper-airplane text-color-theme"></i>
+							<h5><b>ΑΠΑΙΤΗΣΕΙΣ ΠΟΥ ΔΕΝ ΕΙΝΑΙ ΓΙΑ ΟΛΟΥΣ </b></h5>
+							<p>Είμαστε εδώ για να σας πιέσουμε στα όρια σας. Αν δεν είστε έτοιμοι για διάβασμα και καθημερινά projects, αυτό δεν είναι το μέρος για εσάς. Εδώ σκοπό έχουμε να βγάλουμε πραγματικούς επαγγελματίες και αυτό γίνετε μόνο με προσήλωση από την πλευρά σας. </p>
+						</div>
+						<div class="panels-item span5">
+							<i class="icon ion-clock text-color-theme"></i>
+							<h5><b> ΚΑΘΗΓΗΤΕΣ ΜΕ ΠΡΑΚΤΙΚΗ ΓΝΩΣΗ</b></h5>
+							<p>Τα άτομα που θα διδάξουν θα έχουν αποδεδειγμένη πρακτική εμπειρία και θα μπορούν να μεταδώσουν αυτή τη γνώση.  </p>
+						</div> 
 					</div> 
 				</div> 
-
-
 			</div>
 		</div>
 	</section>
 
-
-
-	<section>
+	<section id="instructors">
+		<br>
 		<div class="container">
 			<div class="row">
 				<div class="span12">
-					<h3><span class='color-text'>#</span> Δομη</h3>
-					<p class='normtext'>Το πρόγραμμα είναι χωρισμένο σε 3 κομμάτια: Θεμελιώδη , Ακαδημία, Επαγγελματική Προώθηση. </p>
-					
+					<h3><span class='color-text'>#</span> Ομαδα</h3>
+					<p class='normtext'>Οι καθηγητές και οι συνεργάτες </p>
+				</div>
+				<div class="row">
+					<!-- Start Profile -->
+					<div class="span4 offset1 profile">
+						<div style="text-align:center;"><img src="/images/panos.jpeg" alt=""></div>
+						<div class="profile-name">Πανος Μπαιραμης</div>
+						<div class="profile-job">Lead Instructor</div>
+						<div class="profile-desc">
+							<p>Nimit loves both writing code and teaching and so Fullstack is a true venture of love. Prior to Fullstack, he co-founded MBA Code School where he taught coding workshops at top MBA schools, co-founded Bloomspot, a local offers startup with millions of users that was acquired by JPMorgan/Chase and worked as an engineering lead at Yahoo!. Nimit discovered his love for teaching while volunteer-teaching middle school students as part of the West Philly Tutoring Project.</p>
+						</div>
+						<ul class="profile-social-icons">
+							<li><a href="http://www.linkedin.com/in/nimit"><i class="fa fa-linkedin-square"></i></a></li>
+							<li><a href="https://github.com/nimitmaru"><i class="fa fa-github-square">
+							</i></a></li>
+						</ul>
+					</div>
+					<!-- End Profile -->
+
+					<!-- Start Profile -->
+					<div class="span4 offset1 profile">
+						<div style="text-align:center;"><img src="/images/panos.jpeg" alt=""></div>
+						<div class="profile-name">Γιωργος Θεοφιλης</div>
+						<div class="profile-job">Lead Instructor</div>
+						<div class="profile-desc">
+							<p>David's been building and managing NYC engineering tech teams for many years at companies like RecycleBank, Gilt Groupe and BrightWire Media.  David has previously worked as an engineer at Microsoft, IBM, Yahoo! and Deloitte Consulting but fell in love with the energy and spirit of teaching coding through MBA Code School.</p>
+						</div>
+						<ul class="profile-social-icons">
+							<li><a href="http://www.linkedin.com/in/theofilis"><i class="fa fa-linkedin-square"></i></a></li>
+							<li><a href="https://github.com/theofilis"><i class="fa fa-github-square">
+							</i></a></li>
+						</ul>
+					</div>
+				</div>
+				<br>
+				<!-- End Profile -->
+
+
+				<!-- Start Profile -->
+				<div class="row">
+					<div class="span4 offset1 profile">
+						<div style="text-align:center;"><img src="/images/thecube.png" alt=""></div>
+						<div class="profile-name">The Cube Athens</div>
+						<div class="profile-job">Lead Partner</div>
+						<div class="profile-desc">
+							<p>David's been building and managing NYC engineering tech teams for many years at companies like RecycleBank, Gilt Groupe and BrightWire Media.  David has previously worked as an engineer at Microsoft, IBM, Yahoo! and Deloitte Consulting but fell in love with the energy and spirit of teaching coding through MBA Code School.</p>
+						</div>
+						<ul class="profile-social-icons">
+							<li><a href="https://twitter.com/dyang"><i class="fa fa-twitter-square"></i></a></li>
+							<li><a href="http://www.linkedin.com/in/davidgyang"><i class="fa fa-linkedin-square"></i></a></li>
+						
+						</ul>
+					</div>
+					<!-- End Profile -->   
+
+					<!-- Start Profile -->
+					<div class="span4 offset1 profile">
+						<div style="text-align:center;"><img src="/images/thecube.png" alt=""></div>
+						<div class="profile-name">Σπυρος Σαββιδης</div>
+						<div class="profile-job">Helping to make this work</div>
+						<div class="profile-desc">
+							<p>David's been building and managing NYC engineering tech teams for many years at companies like RecycleBank, Gilt Groupe and BrightWire Media.  David has previously worked as an engineer at Microsoft, IBM, Yahoo! and Deloitte Consulting but fell in love with the energy and spirit of teaching coding through MBA Code School.</p>
+						</div>
+						<ul class="profile-social-icons">
+							<li><a href="http://www.linkedin.com/in/spyridonsavvidis"><i class="fa fa-linkedin-square"></i></a></li>
+							</ul>
+					</div>
+				</div>
+				<!-- End Profile -->     
+			</div>
+			</div>
+			<br>
+		</section>
+
+		<section class="page">
+
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<h3><span class='color-text'>#</span> Δομη</h3>
+						<p class='normtext'>Η δομη της προσφορας μας είναι χωρισμένο σε 3 κομμάτια: Θεωρία , Εφαρμογή, Επαγγελματική Προώθηση. </p>
+
 						<div class="span4">
-							<h5><span class='color-text'>Θεμελιωδη </span></h5>
-							<p>Το πρώτο κομμάτι του προγράμματος είναι μια εντατική εισαγωγική σειρά μαθημάτων σχεδιασμένη για να εντρυφήσεις τις βασικές έννοιες του προγραμματισμού.  <br><br><span class='dark-text'>Η θεμελιώδης εκπαίδευση δεν είναι μια λίστα με links,</span> θα δουλεύεις πάνω σ’ ένα πρόγραμμα με live καθοδήγηση και projects. Με στόχο να είσαι έτοιμος όταν έρθεις στο campus. 
+							<h5><span class='color-text'>θεωρια </span></h5>
+							<p>Το πρώτο κομμάτι είναι μια εντατική εισαγωγική σειρά μαθημάτων σχεδιασμένη για να εντρυφήσεις τις βασικές έννοιες που θα ασχοληθουμε σε καθε συνάντηση.  <br><br><span class='dark-text'>Η θεμελιώδης εκπαίδευση δεν είναι μια λίστα με links,</span> θα δουλεύεις πάνω σ’ ένα πρόγραμμα με καθοδήγηση. Με στόχο να είσαι έτοιμος σε καθε μαθημα. 
 							</p>
 						</div>
 						<div class="span3">
-							<h5><span class='color-text'>Ακαδημια</span></h5>
-							<p>Τα απαραίτητα μαθηματα θα είναι από 9:00πμ μέχρι τις 6:00μμ και στην συνέχεια  όποιος θέλει συνεχίζει. <br><br>Την περισσότερη ώρα θα την ξοδεύουμε σε πραγματικά projects και ασκήσεις σ’ ένα περιβάλλον που θα δουλεύετε με συμμαθητές που είναι το ίδιο αφοσιωμένοι και που θα επιθυμούν πραγματικά αυτό που κάνουν.
+							<h5><span class='color-text'>Εφαρμογη</span></h5>
+							<p>Οι απαραίτητες συναντησεις θα είναι τα απογευματα. <br><br>Την περισσότερη ώρα θα την ξοδεύουμε σε πραγματικά projects και ασκήσεις σ’ ένα περιβάλλον που θα δουλεύετε με άλλα ατομα που είναι το ίδιο αφοσιωμένα.
 							</p>
 						</div>
 						<div class="span4">
-							<h5><span class='color-text'>ΔΙΑΣΥΝΔΕΣΗ ΜΕ ΤΗΝ ΑΓΟΡΑ</span> </h5>
-							<p> Στο τέλος του δευτέρου μέρους θα δούμε τι σας αρέσει και θα αρχίσουμε να φτιάχνουμε το προφίλ σας, θα κάνουμε συνεντεύξεις και θα σας προετοιμάσουμε για το επόμενο σας βήμα. Όλα αυτά πριν ακόμα ξεκινήσετε τις συνεντεύξεις που θα σας έχουμε εξασφαλίσει. </p>
+							<h5><span class='color-text'>Επαγγελματικη Προωθηση</span> </h5>
+							<p> Σε περιπτωση που αναζητατε εργασια θα δούμε τι σας αρέσει και θα αρχίσουμε να φτιάχνουμε το προφίλ σας, θα σας προετοιμάσουμε για το επόμενο σας βήμα. Όλα αυτά πριν ακόμα ξεκινήσετε τις συνεντεύξεις που θα σας έχουμε εξασφαλίσει. </p>
 						</div>
-					
+
+					</div>
 				</div>
+				<!-- CTO Curriculum -->
+				<!-- End CTO Curriculum -->
 			</div>
 
-
-
-			<!-- CTO Curriculum -->
-			<!-- End CTO Curriculum -->
-
-		</div>
-	</section>
+		</section>
 
 
 
-</template>
+	</template>

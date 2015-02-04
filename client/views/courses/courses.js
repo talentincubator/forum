@@ -1,7 +1,20 @@
 Template.share.helpers({
   url: function (){
     var uri = Router.current().url;
-    
+    return decodeURIComponent(uri);
+  }
+});
+
+Template.intro.helpers({
+  url: function (){
+    var uri = Router.current().url;
+    return decodeURIComponent(uri);
+  }
+});
+
+Template.programs.helpers({
+  url: function (){
+    var uri = Router.current().url;
     return decodeURIComponent(uri);
   }
 });
@@ -30,8 +43,7 @@ Template.programs.events({
     var course = event.currentTarget.attributes[1].value;
     if (course) {
       console.log('clicked');
-      var doc = {course:course, userId: Meteor.userId() };
-      Meteor.call('courseUpdate', doc, function(){
+      Meteor.call('courseUpdate', course, Meteor.userId(), function(){
         console.log('call made');
       });
       Meteor.users.update(Meteor.userId(), {$push:{"profile.userIntCourses": course}});

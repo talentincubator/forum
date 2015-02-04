@@ -12,7 +12,7 @@ Meteor.startup(function() {
       Meteor.Mailgun.send({
         to: receiverEmail,
         from: name + ' <' + senderEmail + '>',
-        subject: 'New Contact Form Message',
+        subject: subject,
         text: message,
         html: Handlebars.templates['contactEmail']({siteURL: Meteor.absoluteUrl(), fromName: name, fromEmail: senderEmail, message: message})
       });

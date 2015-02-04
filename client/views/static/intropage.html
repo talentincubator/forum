@@ -96,6 +96,9 @@ a {
 .cardItem .white{
   font-size: 14px;
 }
+.mleft {
+  margin-left: 5px;
+}
 </style>
 <!-- Start Homepage -->
 <header class="header full-width" style="padding:0px;margin:0px;" id="home">
@@ -107,8 +110,8 @@ a {
       <div class="container">
 
         <div class="row">
-          <div class="span12">
             <div id="slidecaption">
+             <div class="span12">
               <div style='text-shadow: 1px 1px 3px #666;'>Πραγματικη εμπερια  - Πρακτικη γνωση
               </div>
               <br>
@@ -127,13 +130,15 @@ a {
               <div class="span2">
                 <img alt=" AngularJs " class="" height="100" src="images/courses/htmlcss.png" width="110">
               </div>                       
-              <div class="span12 sub-caption" id="slidecaption" style='font-size:24px;text-shadow: 1px 1px 3px #666;'> 
+            </div>
+            <br>
+            <br>
+            <div class="span12 sub-caption" id="slidecaption" style='font-size:24px;text-shadow: 1px 1px 3px #666;'> 
                 Μάθε νέα σε ταχύρυθμα απογευματινά μαθήμα, γράφοντας κωδικά μαζί με developers 
               </div>
-              <div class="span12" ><a href="#overview" class="btn white scroll-link">Μαθε περισσοτερα </a>
-              </div>
-            </div>
+
           </div> 
+
         </div>
       </div>
     </header>
@@ -181,11 +186,29 @@ a {
              <!-- <p class='normtext lead' style='margin: 15px 0 25px; padding: 0 0px;'> <span class="color-text"><b>3</b></span> μήνες - <span class="color-text"><b>5</b></span> ημέρες την εβδομάδα - <span class="color-text"><b>9</b></span> ώρες την ημέρα </p>
              <p class='normtext spacier' style='margin: 15px 0 25px; padding: 0 0px;'>Αποφασισμένοι μαθητές + Πρόγραμμα προσαρμοσμένο στις ανάγκες  τις αγοράς + πολύ δουλειά  = <span class="color-text">Μελλοντική επιτυχία</span>.</p> -->
 
-             <p class='normtext spacier'>Το πρόγραμμα σπουδών του Software developer είναι βασισμένο σε JavaScript και σε βάζει μπροστά σε νέες τεχνολογίες web όπως  <span class='dark-text'>Node.js</span>, <span class='dark-text'>Angular.js</span> και <span class='dark-text'>MongoDB</span>.</p> 
-
-
-             <p class='normtext'>Εσύ φέρνεις την ενέργεια, την περιέργεια και την προσήλωση – εμείς δίνουμε τον τρόπο να αναδειχθείς. </p>
-             {{> share}}
+             <p class='normtext spacier'>Το πρόγραμμα σπουδών του Software developer είναι βασισμένο σε JavaScript και σε βάζει μπροστά σε νέες τεχνολογίες web όπως  <span class='dark-text'>Node.js</span>, <span class='dark-text'>Angular.js</span> και <span class='dark-text'>MongoDB</span>. Εσύ φέρνεις την ενέργεια, την περιέργεια και την προσήλωση – εμείς δίνουμε τον τρόπο να αναδειχθείς. </p>
+             <br>
+             <div class="row">
+               <div class="span6">
+                <h4> Τι προσφερουν αλλα προγραμματα:</h4>
+              <ul class="list-group">
+                <li class="mleft">Πιστοποιητικά</li>
+                <li class="mleft">Χαλαρή μάθηση</li>
+                <li class="mleft">Επιδοτήσεις απο ΟΑΕΔ</li>
+              </ul>              
+               </div>
+               <div class="span6">
+                <h4> Τι προσφερουμε <span class='dark-text'> εμεις </span> :</h4>
+              <ul class="list-group">
+                <li class="mleft color-text">Πρόσβαση σε δουλειές προγραμματιστή</li>
+                <li class="mleft color-text">Έμπρακτη γνώση που πληρώνετε και όχι μόνο στην Ελλάδα</li>
+                <li class="mleft color-text">Προσωπική σύσταση στο δίκτυο μας (για οσους προσπαθήσουν) </li>
+                 <li class="mleft color-text">Δουλειά, το είπα?...</li>
+               
+              </ul>     
+               </div>
+             </div>
+             <div style="text-align:center;">{{> share}}</div>
            </div>
            <div class="span4">
             <h4><strong>Δηλωσε ενδιαφερον</strong></h4>
@@ -194,6 +217,7 @@ a {
 
             <div>
               {{> subscriberClassic}}
+              <br>
             </div>
 
 <!--               <form id="form19" name="form19" method="POST" action="//forms.brace.io/sabbidis@gmail.com">
@@ -250,12 +274,6 @@ a {
 
 
 
-
-
-
-
-
-
           <!-- Start Parallax -->
           <section id="parallax1" class='testimonial_parallax_home'>
             <div class="bg1">      </div>
@@ -287,7 +305,7 @@ a {
                               <a href="{{pathFor 'programs'}}"><img alt="MeterJS" class="badge-img" height="90" src="images/courses/meteor.png" width="110">
                               </a></div>
                               <h3 class="pathselected"><a href="{{pathFor 'programs'}}" class="pathselected">Intro to Meteor</a></h3>
-                              <p class="pathDesc">[]</p>
+                              <p class="pathDesc">Ο πιο εύκολος τρόπος να φτιάξετε ένα interactive web app ή ένα prototype της startup ιδέας σας. Όλα σε JS.</p>
                               <div class="cardItem">
                                 <a href="{{pathFor 'programs'}}" class="btn white">View MeteorJS</a>
                               </div>
@@ -317,8 +335,6 @@ a {
                                   </div>
                                 </div>
                               </div>
-
-
                             </div>
 
                           </div>
@@ -367,7 +383,7 @@ a {
                       <h3><span class='color-text'>#</span>ΣΤΟΧΟΣ</h3>
 
                       <hr>
-                      <p class='normtext lead'><span class='dark-text'>Στόχος μας είναι να επιταχύνουμε την καριέρα σου και να σε κάνουμε επαγγελματία developer, ώστε να είσαι περιζήτητος στην αγορά εργασίας ή να ξεκινήσεις την δικιά σου startup</span></p>
+                      <p class='normtext lead'><span class='dark-text'>Στόχος μας είναι να επιταχύνουμε την καριέρα σου και να σε κάνουμε επαγγελματία developer, ώστε να "μετράς" στην αγορά εργασίας ή να ξεκινήσεις την δικιά σου startup</span></p>
 
 
                       <!-- CTO Curriculum -->
@@ -381,56 +397,57 @@ a {
               <!-- End Team Page -->
 
               <!-- Start Parallax -->
-              <section class='testimonial_parallax_home' id="parallax2" style='height:350px;'>
+              <section class='testimonial_parallax_home' id="parallax2" style='height:400px;'>
                 <div class="bg5">
                   <div class="pattern">
                     <div class="container-fluid">
 
                       <div class="row-fluid">
                         <div class="span12">
-                          <h1>Testimonials </h1>
+                          <h1>Student Testimonials </h1>
                           <br>
                           <br>
                         </div>
                         <div class="span3 testimonial">
-                          <p class="testquote">“Μεγάλη έλλειψη στελεχών  Η/Υ στην ευρωπαϊκή  ψηφιακή βιοµηχανία. 900.000  θέσεις Πληροφορικής  θα είναι κενές στην Ευρώπη το 2015</p>
+                          <p class="testquote">“ Εγω επειδή είχα παρακολουθήσει ξανα στο παρελθόν σεμινάριο javascript/ jquery θεωρώ ότι από το δικό σας έμαθα ουσιαστικά βασικά πράγματα που πριν δεν τα είχα καταλάβει."</p>
                           <div class="row-fluid">
-                            <div class="span3 test-face-circular" style="background-image: url(images/testimonials/papadakis.jpg);"></div>
+                          
                             <div class="span9">
-                              <p class="student">δρ Σ. Παπαδάκης </p>
-                              <p class="school">Kαθηγητής και σύμβουλος στο Ανοικτό Πανεπιστήμιο Κύπρου</p>
+                              <p class="student">Student JS101</p>
                             </div>
                           </div>
                         </div>
+
 
                         <div class="span3 testimonial">
-                          <p class="testquote">Υπάρχει τεράστια έλλειψη από developers στην Ελλάδα. Δεν είναι εύκολο να βρεις front end developer ...</p>
+                          <p class="testquote">Το επίπεδο γνώσης ήταν αρκετά advance και στοχευμένο, η αμεσότητα ερωτοαπαντήσεων θεωρώ πως βοήθησε πολύ στην κατανόηση της γλώσσας και των ιδιαιτερωτήτων της (κωλο prototype :P). Είδαμε πως είναι άμεσα υλοποιήσιμα τεχνολογίες όπως ajax και prototype και πιστεύω θα βοηθήσει άμεσα σε δουλειές web development</p>
                           <div class="row-fluid">
-                            <div class="span3 test-face-circular" style="background-image: url(images/testimonials/nodejs.png);"></div>
+                       
                             <div class="span9">
-                              <p class="student">Node.js Developer Ελλαδα</p>
+                               <p class="student">Student JS101</p>
                             </div>
                           </div>
                         </div>
+
 
                         <div class="span3 testimonial">
-                          <p class="testquote">Πληρώνω 3300€/μήνα στον developer, αλλα δεν έχω πολλές επιλογές. Υπάρχει τεράστιο κενό στην αγορά </p>
+                          <p class="testquote">Σε γενικές γραμμές έμεινα αρκετά ικανοποιημένος και σίγουρα θα σας συστήσω σε τυχόν συναδέλφους που θέλουν να μάθουν γρήγορα και σωστά Javascript. Αναμένω νεότερα για το Node.js γιατί με ενδιαφέρει πολύ και πιστεύω ότι αξίζει η επένδυση του για το άμεσο μέλλον.</p>
                           <div class="row-fluid">
-                            <div class="span3 test-face-circular" style="background-image: url(images/testimonials/tc.jpg);"></div>
+                        
                             <div class="span9">
-                              <p class="student">Founder γνωστης startup στην Αθηνα</p>
-
+                                  <p class="student">Student JS101</p>
                             </div>
                           </div>
                         </div>
+
+                 
 
                         <div class="span2 testimonial">
-                          <p class="testquote">"IBM will set up data analytics hub in Greece. We believe that big data, business analytics and cognitive computing have a crucial role to play"</p>
+                          <p class="testquote">"Η προσπάθεια που κάνατε ήταν καλή και προσπαθησατε να υπάρξει  πραγματικό όφελος από αυτό το course και όχι να λέμε ότι έχω κάνει και σεμινάριο javascript.</p>
                           <div class="row-fluid">
-                            <div class="span3 test-face-circular" style="background-image: url(images/testimonials/poulidas.jpg);"></div>
+                       
                             <div class="span9">
-                              <p class="student">Spyros Poulidas</p>
-                              <p class="school">General manager for IBM Greece - Cyprus</p>
+                              <p class="student">Student JS101</p>
                             </div>
                           </div>
                         </div>
@@ -491,18 +508,16 @@ a {
                     <div class="row">
                      <div class="span7">
                       <span class='color-text'><h5>Βασικος σκοπος ειναι να το προγραμμα να ειναι προσιτο</h5></span>
-                      <p>Σκοπός μας δεν είναι να γίνουμε πλούσιοι από αυτή τη δραστηριότητα, αλλά να κάνουμε κάτι που να είναι ωφέλιμο για όλο το οικοσύστημα (αγορά, νέα παιδιά, επιχειρηματικότητα κτλ). Παρ' όλα αυτά δεν είναι ρεαλιστικό να δημιουργήσουμε κάτι μη οικονομικά βιώσιμο και φυσικά δε θεώρουμε το υγιές κέρδος κάτι κακό για μια προσπάθεια. Έχουμε υπολογίσει ένα τίμημα που πιστεύουμε οτι θα καλύπτει τα έξοδα (κανονικούς μισθούς καθηγητών και λειτουργικά έξοδα) και αυτό ανέρχεται περίπου στα <span class='color-text'><b> 200€ ΑΝΑ ΜΑΘΗΜΑ</b></span> </p>
-
-
+                      <p>Σκοπός μας δεν είναι να γίνουμε πλούσιοι από αυτή τη δραστηριότητα, αλλά να κάνουμε κάτι που να είναι ωφέλιμο για όλο το οικοσύστημα (αγορά, νέα παιδιά, επιχειρηματικότητα κτλ). Παρ' όλα αυτά δεν είναι ρεαλιστικό να δημιουργήσουμε κάτι μη οικονομικά βιώσιμο και φυσικά δε θεώρουμε το υγιές κέρδος κάτι κακό για μια προσπάθεια. Έχουμε υπολογίσει ένα τίμημα που πιστεύουμε οτι θα καλύπτει τα έξοδα (κανονικούς μισθούς καθηγητών και λειτουργικά έξοδα) και αυτό ανέρχεται στα <span class='color-text'><b> 200€ ΑΝΑ ΜΑΘΗΜΑ</b></span> </p>
 
                       <hr class="gray margin20 visible-phone">
                     </div>
                     <div class="span5">
                       <span class='color-text'><h5>ΕΚΠΤΩΣΕΙΣ </h5></span>
 
-                      <p><b>1.</b>  -10% if you have taken a previous course</p>
-                      <p><b>2.</b>  -50% if you are a recent university graduate looking for a job</p>
-                      <p><b>3.</b>  -30% if you want to do a side project for us</p>
+                      <p><span class='color-text'><b>-10% </b></span> για κάθε προηγούμενο μάθημα που κάνατε μαζί μας</p>
+                      <p><span class='color-text'><b>-30% </b></span> αν είστε απόφοιτος θετικης σχολής που ψάχνει δουλειά στον χώρο.</p>
+                      <p><span class='color-text'><b>-30% </b></span> αν θέλετε να κάνετε κάποιο σύντομο project μετά το τέλος του μαθήματος</p>
 
                       <hr class="gray margin20 visible-phone">
                     </div>

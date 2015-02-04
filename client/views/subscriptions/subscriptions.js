@@ -22,8 +22,16 @@ Template.subscriberClassic.events({
 				});
 			}
 		});
-	}
-});
+
+		Meteor.call('sendContactEmail', 
+   			'flexprogram@talentincubator.eu',
+            subscription.email,
+            subscription.email,
+            "New Subscription "+ subscription.course,
+            "Email:"+ subscription.email+ " Course:"+subscription.course +" Date"+ new Date()
+            );      
+	
+}});
 
 Template.subscriberClassic.helpers({
 	status: function () {
