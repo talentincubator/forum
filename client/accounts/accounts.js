@@ -4,7 +4,7 @@ Meteor.startup(function() {
   });
 
   AccountsEntry.config({
-    logo: '',
+    logo: '/images/logo.png',
     homeRoute: '/',
     dashboardRoute: '/',
     profileRoute: '/profile',
@@ -12,9 +12,17 @@ Meteor.startup(function() {
     showSignupCode: false,
     extraSignUpFields: [
     {
-      field: "name",
+      field: "username",
       label: "Your Username",
       type: "text",
+      required: true
+    },
+    {
+      
+      field:"role",
+      label:"",
+      name:"viewer",
+      type: "hidden",
       required: true
     }
     ]

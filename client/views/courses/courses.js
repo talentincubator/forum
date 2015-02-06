@@ -1,7 +1,10 @@
 Template.share.helpers({
   url: function (){
     var uri = Router.current().url;
-    return decodeURIComponent(uri);
+    var host = Meteor.absoluteUrl();
+    if (uri[0] =="/") 
+      return host.substring(0, host.lastIndexOf('/')) + decodeURIComponent(uri);
+    return  decodeURIComponent(uri);
   }
 });
 
@@ -20,6 +23,7 @@ Template.programs.helpers({
 });
 
 Template.programs.rendered = function(){
+
   console.log(Meteor.user());
   var userIntCourses = Meteor.user().profile.userIntCourses;
   Session.set('userIntCourses',userIntCourses);

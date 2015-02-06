@@ -1,7 +1,6 @@
 <template name="header">
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <nav class="navbar navbar-default navbar-static-top" style="margin-bottom:0px;border:0px;" role="navigation" id="mainnav">  
     <div class="container-fluid">
-
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
           <span class="sr-only">Toggle navigation</span>
@@ -9,14 +8,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{pathFor 'home'}}">
-<span><img src="/images/logo.png" style="height:20px" alt=""/></span>
-        <span>Classroom</span></a>
+        <a class="navbar-brand" href="{{pathFor 'intro'}}">
+        <span><img src="/images/logo.png" style="height:20px" alt=""/></span>
+        <span>Talent Incubator</span></a>
       </div>
 
       <div class="collapse navbar-collapse" id="main-nav">
       <ul class="nav navbar-nav" style="">
-           {{#if currentUser}}
+       {{#if classroomstudent}}
           <li class="{{activeRouteClass 'reports' 'workout'}}">
             <a href="{{pathFor 'workout'}}"><b>Reports</b></a>
           </li>
@@ -42,6 +41,25 @@
         <li class="dropdown">
           {{> HeaderNotifications}}
         </li>
+        {{else}}
+                <li class="">
+                <a href="{{pathFor 'intro'}}"><b>Home</b></a>
+                </li>
+                <li class="">
+                <a href="{{pathFor 'programs'}}"><b>Courses</b></a>
+                </li>   
+                <li class="">
+                <a href="{{pathFor 'about'}}"><b>About</b></a>
+                </li>                 
+                <li class="">
+                <a href="{{pathFor 'home'}}"><b>Classroom</b></a>
+                </li>      
+               <li class="">
+                <a href="{{pathFor 'services'}}"><b>Extra Services</b></a>
+                </li>                                                            
+                <li class="">
+                <a href="{{pathFor 'applications'}}"><b>Apply</b></a>
+                </li>
         {{/if}}
       </ul>
         {{#if currentUser}}
@@ -75,10 +93,18 @@
   <nav class="navbar navbar-default navbar-static-top" style="margin-bottom:0px;border:0px;" role="navigation" id="mainnav">
         <div class="container-fluid">
           <div class="row">
-            <div class="navbar-header span2">
-              <a href="{{pathFor 'intro'}}" style="margin-top:-5px;" class="navbar-brand scroll-link" id='sticky_logo'><img src="/images/logo.png" style="max-width: 40px;" alt="Greek Talent Accelerator Program"></a>
-            </div>
-            <div class="span6 collapse navbar-collapse" id="main-nav">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="{{pathFor 'home'}}">
+          <span>   <a href="{{pathFor 'intro'}}" style="margin-top:-5px;" class="navbar-brand scroll-link" id='sticky_logo'><img src="/images/logo.png" style="max-width: 40px;" alt="Greek Talent Accelerator Program"></a></span>
+                  <span>Talent Incubator</span></a>
+                </div>
+            <div class="collapse navbar-collapse" id="main-nav">
               <ul id="fluid-nav" style="float: left;" class="fluid-navigation visible-desktop">
 
                 <li class="">
