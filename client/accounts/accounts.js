@@ -1,10 +1,13 @@
 Meteor.startup(function() {
+  
+  Meteor.absoluteUrl.defaultOptions.rootUrl = "http://talentincubator.eu";
+
   Accounts.ui.config({
     passwordSignupFields: 'EMAIL_ONLY'
   });
 
   AccountsEntry.config({
-    logo: '/images/logo.png',
+    logo: '',
     homeRoute: '/',
     dashboardRoute: '/',
     profileRoute: '/profile',
@@ -12,7 +15,7 @@ Meteor.startup(function() {
     showSignupCode: false,
     extraSignUpFields: [
     {
-      field: "username",
+      field: "name",
       label: "Your Username",
       type: "text",
       required: true

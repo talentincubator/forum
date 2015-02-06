@@ -3,7 +3,7 @@ Meteor.startup(function() {
     SEO.config({
       title: 'Talent Incubator',
       meta: {
-        'description': 'Talent Incubator '
+        'description': 'Academy of coding, javascript, nodejs, angular, meteor, python, data analysis'
       },
       og: {
         'image': Meteor.absoluteUrl('images/favicons/favicon.ico')

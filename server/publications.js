@@ -29,7 +29,7 @@ Meteor.publish('workouts', function(id) {
 });
 
 
-Meteor.publish("courses", function(userId){
+Meteor.publish("courses", function(){
   // check(userId, String);
   return Courses.find();
 });

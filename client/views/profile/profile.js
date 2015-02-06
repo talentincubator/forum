@@ -3,7 +3,7 @@ Template.profile.helpers({
     return [
       { name: "firstName", required: true },
       { name: "lastName", required: true },
-      { name: "name", required: true },
+      { name: "username", required: true },
       { name: "organizationWorking", required: false },
       { name: "position", required: false },
       { name: "location", required: false },

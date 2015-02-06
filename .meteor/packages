@@ -9,7 +9,6 @@ less
 accounts-ui
 accounts-password
 alanning:roles
-iron:router
 zimme:iron-router-active
 manuelschoebel:ms-seo
 cmather:handlebars-server@0.2.0
@@ -31,4 +30,5 @@ aldeed:autoform
 sacha:spin
 ryw:blog
 
-houston:admin
+reywood:iron-router-ga
+iron:router
