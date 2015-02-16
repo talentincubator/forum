@@ -1,7 +1,9 @@
 
 <template name="intro">
   <style type="text/css" media="screen">
-
+.clients img {
+max-height: 80px;
+}
     .cardout {
       box-sizing: border-box;
       float: center;
@@ -143,7 +145,7 @@ a {
               </div>                       
             </div>
             <div class="span12 sub-caption" id="slidecaption" style='position: relative;padding-top:0px;font-size:24px;text-shadow: 1px 1px 3px #666;'> 
-              Μάθε νέα σε ταχύρυθμα απογευματινά μαθήμα, γράφοντας κωδικά μαζί με developers 
+              Κέρδισε πραγματική γνώση, σε ταχύρυθμα απογευματινά μαθήματα, γράφοντας κώδικα μαζί με developers 
             </div>
 
           </div> 
@@ -217,16 +219,20 @@ a {
               </div>
             </div>
             <div style="text-align:center;">{{> share}}</div>
+            <br>
+            <br>
           </div>
+          {{#if currentUser}}
+           {{else}}
           <div class="span4">
             <h4><strong>Δηλωσε ενδιαφερον</strong></h4>
             <p>Δήλωσε ενδιαφέρoν και μάθε πρώτος νέα και ποτέ θα ξεκινήσουμε.</p>
-
             <div>
               {{> subscriberClassic}}
               <br>
             </div>
-
+          </div>
+          {{/if}}
 <!--               <form id="form19" name="form19" method="POST" action="//forms.brace.io/sabbidis@gmail.com">
                 <table class="contact_form">
                   <tr>
@@ -246,7 +252,7 @@ a {
                   </table>
                 </form> -->
 
-              </div>
+            
             </div>
 
 
@@ -302,7 +308,7 @@ a {
                             <h3 class="pathselected"><a href="{{pathFor 'programs'}}" class="pathselected"> Javascript <br> 101 </a></h3>
                             <p class="pathDesc">Το να είσαι καλός developer δεν σημαίνει μόνο να ξέρεις τα τελευταία frameworks και γλώσσες, αλλά να γράφεις αποτελεσματικό και καλό κώδικα. </p>
                             <div class="cardItem">
-                              <a href="/paths/ios" class="btn white">View <br>Javascript</a>
+                              <a href="{{pathFor 'programs'}}" class="btn white">View <br>Javascript</a>
                             </div>
                           </div>
                         </div>
@@ -505,11 +511,12 @@ a {
               <div class="row">
                 <div class="span12">
                   <div class="" style="padding-top:20px; height: 300px;">
-                    <h2 class="white-text" style="margin-bottom: 20px;">Supporters - Recruiters</h2>
+                    <h2 class="white-text" style="margin-bottom: 20px;">Recruiters</h2>
                     <ul class="clients">
                       <li><img src="/images/employers/bdswiss.png"></li>
+                      <li><img src="/images/employers/taxibeat.png"></li>
                       <li><img src="/images/employers/soldecom.png"></li>
-                      <li><img src="/images/employers/thecube.png"></li>
+                      <li><img src="/images/employers/skroutz.png"></li>
                       <li><img src="/images/employers/dopios.png"></li>
                     </ul>
                     <!-- <a href="/employers" class="btn white scroll-link">See More Employers</a> -->
@@ -520,7 +527,32 @@ a {
           </section>
           <!-- End Parallax -->
 
+         <!-- Start Full Team Page -->
+          <section id="instructors" class="page" style="padding-bottom: 50px;">
+            <div class="container">
+              <div class="row">
+                <div class="span12">
+                  <div class="row">
+                   <div class="span3 offset2">
+                        <img src="/images/employers/thecube.png">
+                    <hr class="gray margin20 visible-phone">
+                  </div>
+                  <div class="span6 offset1">
+                    <div class="title">Partner</div>
+                    <p>Τα μαθήματα γίνονται στο <span class='color-text'>The Cube,</span>  που είναι και από τους βασικούς συνεργάτες αυτής της εκπαιδευτικής προσπάθειας.</p>
+                    <p><span class='color-text'>8 Kleisovis Str, 10677 – Athens, Greece</span></p>
+                    <p><span class='color-text'>hello@thecube.gr</span></p>
+                    <p><span class='color-text'>Landline: +30 211 408 12 53</span></p>
 
+                    <hr class="gray margin20 visible-phone">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- End Full Team Page -->
 
 
           <!-- Start Full Team Page -->
@@ -547,11 +579,7 @@ a {
 
                     <hr class="gray margin20 visible-phone">
                   </div>
-
-
                 </div>
-
-
               </div>
             </div>
           </div>
@@ -560,27 +588,4 @@ a {
         <!-- End Full Team Page -->
 
 
-        <!-- Start Contact Page -->
-        <section id="apply" class="page page-gray">
-          <div class="container">
-            <div class="row">
-              <div class="span12" style="text-align:center">
-                {{#if currentUser}}
-                {{> share}}
-                {{else}}
-                <div class="title center-title">Αν θεωρεις οτι το εχεις, <span class="color-text"> Log in</span> και πες μας για ποια μαθηματα ενδιαφερεσε </div>
-                <hr>
-                <div style="text-align:center">
-                  <a href="{{ pathFor 'entrySignIn' }}" class="btn btn-default white">Sign in</a>
-                </div>
-                {{/if}}
-              </div>
-            </div>
-            <!-- End Form -->
-          </div>
-        </section>
-        <!-- End Contact Page -->
-
-
-        <!-- Start Sidebar -->
       </template>      

@@ -3,7 +3,7 @@ Template.profile.helpers({
     return [
       { name: "firstName", required: true },
       { name: "lastName", required: true },
-      { name: "username", required: true },
+      { name: "name", required: true },
       { name: "organizationWorking", required: false },
       { name: "position", required: false },
       { name: "location", required: false },
@@ -17,11 +17,9 @@ Template.profile.helpers({
 Template.profile.events({
   'submit form': function(event) {
     event.preventDefault();
-    var data = SimpleForm.processForm(event.target);
-     
+    var data = SimpleForm.processForm(event.target); 
     var moredata = _.extend(data, {
-      name: data.name || Meteor.user().profile.name});
-    console.log(moredata);
+    name: data.name || Meteor.user().profile.name});
     Meteor.users.update(Meteor.userId(), {$set: {profile: moredata}});
     Router.go('home');  
   }

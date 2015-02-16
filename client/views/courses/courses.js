@@ -8,7 +8,22 @@ Template.share.helpers({
   }
 });
 
-Template.intro.helpers({
+
+Template.singlecourse.helpers({
+  myTemplate: function (){
+    return Router.current().params.course;
+  }
+});
+
+
+Template.footer.helpers({
+  login : function() {
+    var uri = Router.current().url;
+    if (uri =="/sign-in" || uri =="/sign-up" || uri =="/forgot-password") {
+      return false;
+    }
+    return true;
+  },
   url: function (){
     var uri = Router.current().url;
     return decodeURIComponent(uri);
@@ -19,6 +34,9 @@ Template.programs.helpers({
   url: function (){
     var uri = Router.current().url;
     return decodeURIComponent(uri);
+  },
+  js101: function() {
+    return "js101";
   }
 });
 
@@ -28,7 +46,6 @@ if (Meteor.user()) {
   Session.set('userIntCourses',userIntCourses);
   (function(event,template){
   var coursenodes =  $('.coursebutton');
-  console.log(coursenodes);
   _.each(coursenodes, function(btn){
     var node = $(btn);
     if (!(userIntCourses.indexOf(node.context.attributes[1].value) === -1) ) {
@@ -44,7 +61,11 @@ if (Meteor.user()) {
 Template.programs.events({
   "click .coursebutton": function(event, template){
     var course = event.currentTarget.attributes[1].value;
-    if (course) {
+    var userIntCourses = Meteor.user().profile.userIntCourses || [];
+    if (Meteor.user().profile.role=="viewer") {
+      Meteor.user().profile.role = "intStudent";
+    }
+    if (course && !(course in userIntCourses)) {
       Meteor.call('courseUpdate', course, Meteor.userId(), function(){
         console.log('call made');
       });
@@ -54,3 +75,19 @@ Template.programs.events({
 
   }
 });
+
+
+//VERIFY THE EMAIL ADDRESS
+Template.intro.created = function() {
+  if (Accounts._verifyEmailToken) {
+    Accounts.verifyEmail(Accounts._verifyEmailToken, function(err) {
+      if (err != null) {
+        if (err.message == 'Verify email link expired [403]') {
+          console.log('Sorry this verification link has expired.');
+        }
+      } else {
+        console.log('Thank you! Your email address has been confirmed.');
+      }
+    });
+  }
+};

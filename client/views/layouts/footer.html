@@ -1,4 +1,44 @@
 <template name="footer">
+<style type="text/css">
+  body {
+    background: #eee;
+  }
+</style>
+          <!-- Start Contact Page -->
+        <section id="apply" class="page-gray">
+          <div class="container">
+            <div class="row">
+              <div class="span12" style="text-align:center">
+                {{#if currentUser}}
+                <div class="row page-gray not-ready" style=" padding:20px">
+                {{> share}}
+                </div>
+                {{else}}
+                {{#if login}}
+               <div class="row page-gray not-ready" style="">
+                <div class="span8 offset2">
+                  <h3 class='marker-lead'>Δεν εισαι ετοιμος ? </h3>
+
+                  <p class='normtext'>Άμα θέλετε δώστε μας το email σας για να σας στείλουμε πληροφορίες και δωρεάν υλικό.</p> 
+                  <p class='normtext'> Άμεσα θα πάρετε ένα <span class='color-text'> ebook </span>(24 pages) με κάποια από τα καλύτερα άρθρα για intro Javascript και στην συνέχεια,<span class='color-text'> JS patterns, Νodejs αλλά και CV templates και CV συμβουλές.</span></p>
+                  <br>
+                  <div class="page page-gray" style="padding-bottom: 40px;">
+                    {{> subscriberClassic}}
+                  </div>
+                  <br>
+                </div>
+              </div>
+                  {{else}}
+                  <div style="padding-bottom: 40px;background: #eee;"></div>
+                {{/if}}
+                {{/if}}
+              </div>
+            </div>
+            <!-- End Form -->
+          </div>
+        </section>
+        <!-- End Contact Page -->
+
   <section id="sidebar" class="new_footer">
     <div class="container">
       <div class="row">

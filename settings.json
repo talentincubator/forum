@@ -2,7 +2,8 @@
   "public": {
   	"ga": {
             "id": "UA-38611903-4"
-        }
+          },
+    "houston_root_route": "/data"
+	        }
 
   }
-}

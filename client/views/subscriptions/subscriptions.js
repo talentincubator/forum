@@ -17,7 +17,7 @@ Template.subscriberClassic.events({
 				console.log('successfully inserted subscriber: '+id);
 				$(target).find('input').val("");
 				Session.set('subscribeStatus', {
-					message: '<b>Ευχαριστούμε</b>! Περιμενε στο email σου δωρεαν υλικο',
+					message: '<b>Ευχαριστούμε</b>! Περίμενε μέσα στις επόμενες ώρες το δωρεάν υλικό',
 					class: 'alert-success'
 				});
 			}

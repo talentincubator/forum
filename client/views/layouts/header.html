@@ -16,6 +16,7 @@
       <div class="collapse navbar-collapse" id="main-nav">
       <ul class="nav navbar-nav" style="">
        {{#if classroomstudent}}
+       {{#if currentUser}}
           <li class="{{activeRouteClass 'reports' 'workout'}}">
             <a href="{{pathFor 'workout'}}"><b>Reports</b></a>
           </li>
@@ -41,6 +42,7 @@
         <li class="dropdown">
           {{> HeaderNotifications}}
         </li>
+        {{/if}}
         {{else}}
                 <li class="">
                 <a href="{{pathFor 'intro'}}"><b>Home</b></a>

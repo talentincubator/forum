@@ -1,0 +1,310 @@
+<template name="singlecourse">
+<style>
+.terms {
+font-size: 20px;
+padding: 10px;
+list-style-type:none;
+}
+.coursetitle {
+color: #fff;
+font: 48px 'Trebuchet MS', sans-serif;
+text-transform: uppercase;
+width: 100%;
+line-height: 1.3;	
+}
+.text {
+font-size: 20px;
+padding-bottom: 15px;
+
+list-style-type:none;	
+}
+
+.boxmsg {
+position: relative;
+display: block;
+padding: 10px 15px;
+margin-bottom: -1px;
+background-color: #ffffff;
+border: 1px solid #dddddd
+}
+</style>
+	<section id="parallax4" style='min-height: 200px;'>
+		<div class="bg6"></div>
+		<div class="pattern"></div>
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<div class="vertical-text" style='height: 200px;'>
+						<br>
+						<div class="span12">
+							<div class="vertical-text" style='color:#fff;position: relative; height:inherit;text-align:left;'>
+							<img style="height:100px;" src="/images/courses/{{myTemplate}}.png" alt="">
+								<div class='coursetitle lead' style='font-size: 40px; width: 100%; padding:0;margin-top:0px;'>
+									{{myTemplate}}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="program" class="page" style="padding-bottom: 10px;">
+		<div class="container">
+			<h3><span class="color-text">#</span>Terms & Conditions</h3>
+			<div class="row">
+				<div class="span10">
+					<ul class="unstyled list-group">
+
+						<li class="terms">
+						<span class="color-text">1.</span> Πιστεύουμε σε αυτό που κάνουμε, αν δεν σας αρέσει το πρώτο μάθημα μπορείτε να πάρετε πίσω ΟΛΑ τα λεφτά σας μετά το τέλος της συναντήσης.
+						</li>
+						<li class="terms">
+						<span class="color-text">2.</span> Αν θέλετε μπορείτε να έρθετε στο 1ο μάθημα να γνωριστούμε και κάνετε audit for free (δεν θα μπορείτε να παρακολουθήσετε τον συγκεκριμένο κύκλο, αλλά τον επόμενο όταν γίνει).
+						</li>
+						<li class="terms">
+						<span class="color-text">3.</span> Από το 2o μάθημα και μετά τα λεφτά δεν επιστρέφονται, αλλά αν κάτι συμβεί το εναπομείναν πόσο αφαιρείται από μελλοντικό ίδιο ή κάποιο άλλο μάθημα.
+						</li>
+						<li class="terms">
+						<span class="color-text">4.</span> Αν δε υπάρξουν τουλάχιστον 5 μαθητές το μάθημα θα ακυρωθεί και όλα τα λεφτά θα επιστραφούν στους δικαιούχους.
+						</li>
+						<li class="terms">
+						<span class="color-text">5.</span> H πληρωμή μπορεί να γίνει στο The Cube με μετρητά ή με πιστωτική κάρτα στο αντίστοιχο event του meetup.com.
+						</li>
+						<li class="terms">
+						<span class="color-text">6.</span> Προϋπόθεση για την παρακολούθηση είναι να έχετε τις γνώσεις που αναφέρουμε στα pre-requirements του μαθήματος.
+						</li>
+						<li class="terms">
+						<span class="color-text">7.</span> Προϋπόθεση για να μάθετε είναι να κάνετε τις ασκήσεις σας στο σπίτι και να διαβάζετε. Αλλιώς θα τα ξεχάσετε όλα μέσα σε μερικές εβδομάδες.
+						</li>
+						<li class="terms">
+						<span class="color-text">8.</span> Όποιο μάθημα δε μπορεί να πραγματοποιηθεί μια συγκεκριμένη ημερομηνία θα αναπληρώνεται σε μελλοντικό χρόνο.
+						</li>
+						<li class="terms">
+						<span class="color-text">9.</span> Αν καταλάβουμε ότι κάποιος μαθητής δεν ενδιαφέρεται να μάθει, δε διαβάζει και καθυστερεί την τάξη, επιφυλασσόμαστε του δικαιώματος να του πούμε να σταματήσει τα μαθήματα, επιστρέφοντας του το εναπομείναν ποσό.
+						</li>
+
+					</ul>     
+				</div>   
+			</div>
+		</div>
+	</section>
+
+	{{> UI.dynamic template=myTemplate data=this }}
+
+</template>
+
+<template name="js101">
+	<section id="program" class="">
+		<div class="container">
+			<h2><span class="color-text">#</span>Προγραμμα</h2>
+			<br>
+			<div class="row">
+				<div class="span6">
+					<ul class="unstyled list-group">
+
+						<li class="terms color-text">
+						Δευτέρα 2/3/2015 (19.00 - 21.00) 						
+						</li>
+						<li class="text">
+						Language basics , Operators , Functions
+						</li>
+						<li class="terms color-text">
+						Τετάρτη 4/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						Control Flow, Loops (for,while)
+						</li>						
+						<li class="terms color-text">
+						Δευτέρα 9/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						Variables,Scope and Memory
+						</li>						
+						<li class="terms color-text">
+						Τετάρτη 11/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						Intro to Object oriented programming
+						</li>						
+						<li class="terms color-text">
+						Δευτέρα 16/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						More Object oriented programming
+						</li>						
+						<li class="terms color-text">
+						Τετάρτη 18/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						The DOM
+						</li>						
+						<li class="terms color-text">
+						Δευτέρα 23/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+							Events and how we use them
+						</li>						
+						<li class="terms color-text">
+						Τετάρτη 25/4/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+							APIs
+						</li>										
+					</ul>     
+				</div>  
+				<div class="boxmsg span6">
+				<p class="text">
+				<span class="color-text">Σε κάθε συνάντηση :</span><br>
+				<span class="color-text">1.</span> θα πρέπει να γράφετε τον κώδικα από τα παραδείγματα<br>
+				<span class="color-text">2.</span> θα πρέπει να κάνετε μικρά apps μόνοι, με δικια μας επιτήρηση.
+				</p>
+				 </div>
+			</div>
+		</div>
+	</section>
+
+</template>
+
+<template name="node101">
+<section id="program" class="">
+		<div class="container">
+			<h2><span class="color-text">#</span>Προγραμμα</h2>
+			<br>
+			<div class="row">
+				<div class="span6">
+					<ul class="unstyled list-group">
+
+						<li class="terms color-text">
+						Δευτέρα 2/3/2015 (19.00 - 21.00) 						
+						</li>
+						<li class="text">
+						Node philosophy - Advanced Javascript 
+						</li>
+						<li class="terms color-text">
+						Πέμπτη 5/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						NodeJS explanation creating a simple server and explaining all the parts
+						</li>						
+						<li class="terms color-text">
+						Δευτέρα 9/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						Intro to MongoDB -  Connect and import Json data
+						</li>						
+						<li class="terms color-text">
+						Πέμπτη 12/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						ExpressJS
+						</li>						
+						<li class="terms color-text">
+						Δευτέρα 16/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						Socket.io and a real-time chat example
+						</li>						
+						<li class="terms color-text">
+						Πέμπτη 19/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						In-house Project development (Part 1)
+						</li>						
+						<li class="terms color-text">
+						Δευτέρα 23/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						 Persisting Data
+						</li>						
+						<li class="terms color-text">
+						Πέμπτη 26/4/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						 In-house Project development (Part 2)
+						</li>										
+					</ul>     
+				</div>  
+				<div class="boxmsg span6">
+				<p class="text">
+				<span class="color-text">Σε κάθε συνάντηση :</span><br>
+				<span class="color-text">1.</span> θα πρέπει να γράφετε τον κώδικα από τα παραδείγματα<br>
+				<span class="color-text">2.</span> θα πρέπει να κάνετε μικρά apps μόνοι, με δικια μας επιτήρηση.
+				</p>
+				 </div>
+			</div>
+		</div>
+	</section>
+</template>
+
+<template name="angular101">
+<section id="program" class="">
+		<div class="container">
+			<h2><span class="color-text">#</span>Προγραμμα</h2>
+			<br>
+			<div class="row">
+				<div class="span6">
+					<ul class="unstyled list-group">
+
+						<li class="terms color-text">
+						Τρίτη 3/3/2015 (19.00 - 21.00) 						
+						</li>
+						<li class="text">
+						What is MVW, Structure of the project
+						</li>
+						<li class="terms color-text">
+						Παρασκευή 6/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						Modules, Controllers, Data binding
+						</li>						
+						<li class="terms color-text">
+						Τρίτη 10/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						Scopes, Broadcasting & Emitting Events
+						</li>						
+						<li class="terms color-text">
+						Παρασκευή 13/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						Multiple Views and Routing, The ng-include Directive
+						</li>						
+						<li class="terms color-text">
+						Τρίτη 17/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						Services, Factories, Providers
+						</li>						
+						<li class="terms color-text">
+						Παρασκευή 20/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						AngularJS Http service (API)
+						</li>						
+						<li class="terms color-text">
+						Τρίτη 24/3/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						In-house Project development  (Part1)
+						</li>						
+						<li class="terms color-text">
+						Παρασκευή 27/4/2015 (19.00 - 21.00)
+						</li>
+						<li class="text">
+						 In-house Project development (Part 2)
+						</li>										
+					</ul>     
+				</div>  
+				<div class="boxmsg span6">
+				<p class="text">
+				<span class="color-text">Σε κάθε συνάντηση :</span><br>
+				<span class="color-text">1.</span> θα πρέπει να γράφετε τον κώδικα από τα παραδείγματα<br>
+				<span class="color-text">2.</span> θα πρέπει να κάνετε μικρά apps μόνοι, με δικιά μας επιτήρηση.
+				</p>
+				 </div>
+			</div>
+		</div>
+	</section>
+</template>
